@@ -410,17 +410,17 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
-(28, 1, 'Мониторы', '', '', '', '', ''),
-(32, 1, 'Веб-камеры', '', '', '', '', ''),
+(28, 1, 'Монітори', '', '', '', '', ''),
+(32, 1, 'Веб-камери', '', '', '', '', ''),
 (31, 1, 'Сканеры', '', '', '', '', ''),
-(30, 1, 'Принтеры', '', '', '', '', ''),
-(29, 1, 'Мышки', '', 'Мышки', '', '', ''),
+(30, 1, 'Сканери', '', '', '', '', ''),
+(29, 1, 'Мишки', '', 'Мишки', '', '', ''),
 (27, 1, 'Mac', '', '', '', '', ''),
 (26, 1, 'PC', '', '', '', '', ''),
-(17, 1, 'Програмное обеспечение', '', '', '', '', ''),
-(25, 1, 'Компоненты', '', 'Components', '', '', ''),
-(24, 1, 'Телефоны и PDA', '', '', '', '', ''),
-(20, 1, 'Компьютеры', '&lt;p&gt;\r\n	Пример текста в описания категории&lt;/p&gt;\r\n', '', '', '', ''),
+(17, 1, 'Програмне забезпечення', '', '', '', '', ''),
+(25, 1, 'Компоненти', '', 'Components', '', '', ''),
+(24, 1, 'Телефони та PDA', '', '', '', '', ''),
+(20, 1, 'Комп''ютери', '&lt;p&gt;\r\n	Приклад тексту до опису категорії&lt;/p&gt;\r\n', '', '', '', ''),
 (35, 1, 'test 1', '', 'test 1', '', '', ''),
 (36, 1, 'test 2', '', 'test 2', '', '', ''),
 (37, 1, 'test 5', '', '', '', '', ''),
@@ -430,7 +430,7 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (41, 1, 'test 8', '', '', '', '', ''),
 (42, 1, 'test 9', '', '', '', '', ''),
 (43, 1, 'test 11', '', '', '', '', ''),
-(34, 1, 'MP3 Плееры', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', '', '', ''),
+(34, 1, 'MP3 Плеери', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', '', '', ''),
 (18, 1, 'Ноутбуки', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'Laptops &amp; Notebooks', '', '', ''),
 (44, 1, 'test 12', '', '', '', '', ''),
 (45, 1, 'Windows', '', '', '', '', ''),
@@ -445,9 +445,9 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (54, 1, 'test 22', '', '', '', '', ''),
 (55, 1, 'test 23', '', '', '', '', ''),
 (56, 1, 'test 24', '', '', '', '', ''),
-(57, 1, 'Планшеты', '', '', '', '', ''),
+(57, 1, 'Планшети', '', '', '', '', ''),
 (58, 1, 'test 25', '', '', '', '', ''),
-(33, 1, 'Камеры', '', '', '', '', ''),
+(33, 1, 'Камери', '', '', '', '', ''),
 (20, 2, 'Desktops', '&lt;p&gt;Example of category description text&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (18, 2, 'Laptops &amp; Notebooks', '&lt;p&gt;Shop Laptop feature only the best laptop deals on the market. By \r\ncomparing laptop deals from the likes of PC World, Comet, Dixons, The \r\nLink and Carphone Warehouse, Shop Laptop has the most comprehensive \r\nselection of laptops on the internet. At Shop Laptop, we pride ourselves\r\n on offering customers the very best laptop deals. From refurbished \r\nlaptops to netbooks, Shop Laptop ensures that every laptop - in every \r\ncolour, style, size and technical spec - is featured on the site at the \r\nlowest possible price.&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (25, 2, 'Components', '', '', '', '', ''),
@@ -485,7 +485,45 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (39, 2, 'test 6', '', '', '', '', ''),
 (40, 2, 'test 7', '', '', '', '', ''),
 (41, 2, 'test 8', '', '', '', '', ''),
-(42, 2, 'test 9', '', '', '', '', '');
+(42, 2, 'test 9', '', '', '', '', ''),
+(28, 3, 'Мониторы', '', '', '', '', ''),
+(32, 3, 'Веб-камеры', '', '', '', '', ''),
+(31, 3, 'Сканеры', '', '', '', '', ''),
+(30, 3, 'Принтеры', '', '', '', '', ''),
+(29, 3, 'Мышки', '', 'Мышки', '', '', ''),
+(27, 3, 'Mac', '', '', '', '', ''),
+(26, 3, 'PC', '', '', '', '', ''),
+(17, 3, 'Програмное обеспечение', '', '', '', '', ''),
+(25, 3, 'Компоненты', '', 'Components', '', '', ''),
+(24, 3, 'Телефоны и PDA', '', '', '', '', ''),
+(20, 3, 'Компьютеры', '&lt;p&gt;\r\n	Пример текста в описания категории&lt;/p&gt;\r\n', '', '', '', ''),
+(35, 3, 'test 1', '', 'test 1', '', '', ''),
+(36, 3, 'test 2', '', 'test 2', '', '', ''),
+(37, 3, 'test 5', '', '', '', '', ''),
+(38, 3, 'test 4', '', '', '', '', ''),
+(39, 3, 'test 6', '', '', '', '', ''),
+(40, 3, 'test 7', '', '', '', '', ''),
+(41, 3, 'test 8', '', '', '', '', ''),
+(42, 3, 'test 9', '', '', '', '', ''),
+(43, 3, 'test 11', '', '', '', '', ''),
+(34, 3, 'MP3 Плееры', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', '', '', ''),
+(18, 3, 'Ноутбуки', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'Laptops &amp; Notebooks', '', '', ''),
+(44, 3, 'test 12', '', '', '', '', ''),
+(45, 3, 'Windows', '', '', '', '', ''),
+(46, 3, 'Macs', '', '', '', '', ''),
+(47, 3, 'test 15', '', '', '', '', ''),
+(48, 3, 'test 16', '', '', '', '', ''),
+(49, 3, 'test 17', '', '', '', '', ''),
+(50, 3, 'test 18', '', '', '', '', ''),
+(51, 3, 'test 19', '', '', '', '', ''),
+(52, 3, 'test 20', '', '', '', '', ''),
+(53, 3, 'test 21', '', '', '', '', ''),
+(54, 3, 'test 22', '', '', '', '', ''),
+(55, 3, 'test 23', '', '', '', '', ''),
+(56, 3, 'test 24', '', '', '', '', ''),
+(57, 3, 'Планшеты', '', '', '', '', ''),
+(58, 3, 'test 25', '', '', '', '', ''),
+(33, 3, 'Камеры', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -719,7 +757,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (17, 'Bahrain', 'BH', 'BHR', '', 0, 1),
 (18, 'Bangladesh', 'BD', 'BGD', '', 0, 1),
 (19, 'Barbados', 'BB', 'BRB', '', 0, 1),
-(20, 'Белоруссия (Беларусь)', 'BY', 'BLR', '', 0, 1),
+(20, 'Беларусь', 'BY', 'BLR', '', 0, 1),
 (21, 'Belgium', 'BE', 'BEL', '{firstname} {lastname}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{postcode} {city}\r\n{country}', 0, 1),
 (22, 'Belize', 'BZ', 'BLZ', '', 0, 1),
 (23, 'Benin', 'BJ', 'BEN', '', 0, 1),
@@ -813,7 +851,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (112, 'North Korea', 'KP', 'PRK', '', 0, 1),
 (113, 'South Korea', 'KR', 'KOR', '', 0, 1),
 (114, 'Kuwait', 'KW', 'KWT', '', 0, 1),
-(115, 'Киргизия (Кыргызстан)', 'KG', 'KGZ', '', 0, 1),
+(115, 'Кыргызстан', 'KG', 'KGZ', '', 0, 1),
 (116, 'Lao People''s Democratic Republic', 'LA', 'LAO', '', 0, 1),
 (117, 'Latvia', 'LV', 'LVA', '', 0, 1),
 (118, 'Lebanon', 'LB', 'LBN', '', 0, 1),
@@ -918,7 +956,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (217, 'Turks and Caicos Islands', 'TC', 'TCA', '', 0, 1),
 (218, 'Tuvalu', 'TV', 'TUV', '', 0, 1),
 (219, 'Uganda', 'UG', 'UGA', '', 0, 1),
-(220, 'Украина', 'UA', 'UKR', '', 0, 1),
+(220, 'Україна', 'UA', 'UKR', '', 0, 1),
 (221, 'United Arab Emirates', 'AE', 'ARE', '', 0, 1),
 (222, 'United Kingdom', 'GB', 'GBR', '', 1, 1),
 (223, 'United States', 'US', 'USA', '{firstname} {lastname}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}', 0, 1),
@@ -1057,10 +1095,9 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Рубль', 'RUB', '', 'р.', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
-(2, 'US Dollar', 'USD', '$', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21'),
-(4, 'Гривна', 'UAH', '', 'грн.', '2', 0.44016022, 1, '2017-07-19 21:28:21');
+(1, 'Гривня', 'UAH', '', ' грн.', '2', 1.00000000, 1, '2023-03-27 22:00:00'),
+(2, 'US Dollar', 'USD', '$', '', '2', 0.02707687, 1, '2023-03-27 22:00:00'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.02512334, 1, '2023-03-27 22:00:00');
 
 -----------------------------------------------------------
 
@@ -1196,7 +1233,8 @@ CREATE TABLE `oc_customer_group_description` (
 --
 
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
-(1, 1, 'Default', 'test');
+(1, 1, 'Default', 'Стандартна група покупців. Бонусні бали не нараховуються, знижки не передбачені.'),
+(1, 2, 'Default', 'Default customer group. Bonus points are not awarded, discounts are not provided.');
 
 -----------------------------------------------------------
 
@@ -1615,7 +1653,6 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (45, 'module', 'blog_category'),
 (46, 'module', 'featured_article'),
 (47, 'module', 'featured_product'),
-(48, 'currency', 'cbr'),
 (49, 'currency', 'ecb'),
 (50, 'currency', 'nbu'),
 (51, 'dashboard', 'domovoy');
@@ -1780,14 +1817,18 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
-(4, 1, 'О нас', '&lt;p&gt;О нас&lt;br&gt;&lt;/p&gt;\r\n', '', '', '', ''),
-(5, 1, 'Условия соглашения', '&lt;p&gt;\r\n	Условия соглашения&lt;/p&gt;\r\n', '', '', '', ''),
-(3, 1, 'Политика безопасности', '&lt;p&gt;\r\n	Политика безопасности&lt;/p&gt;\r\n', '', '', '', ''),
-(6, 1, 'Информация о доставке', '&lt;p&gt;\r\n	Информация о доставке&lt;/p&gt;\r\n', '', '', '', ''),
+(4, 1, 'Про магазин', '&lt;p&gt;\r\n	Опис магазину&lt;/p&gt;\r\n', 'Про магазин', '', '', ''),
+(5, 1, 'Умови оформлення замовлення', '&lt;p&gt;\r\n	Опис умов оформлення замовлення&lt;/p&gt;\r\n', 'Умови оформлення замовлення', '', '', ''),
+(3, 1, 'Угода користувача', '&lt;p&gt;\r\n	Текст угоди користувача&lt;/p&gt;\r\n', 'Угода користувача', '', '', ''),
+(6, 1, 'Інформація про доставку', '&lt;p&gt;\r\n	Опис умов доставки&lt;/p&gt;\r\n', 'Інформація про доставку', '', '', ''),
 (4, 2, 'About Us', '&lt;p&gt;About Us&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (6, 2, 'Delivery Information', '&lt;p&gt;Delivery Information&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (5, 2, 'Terms &amp; Conditions', '&lt;p&gt;Terms &amp;amp; Conditions&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
-(3, 2, 'Privacy Policy', '&lt;p&gt;Privacy Policy&lt;br&gt;&lt;/p&gt;', '', '', '', '');
+(3, 2, 'Privacy Policy', '&lt;p&gt;Privacy Policy&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(4, 3, 'О нас', '&lt;p&gt;О нас&lt;br&gt;&lt;/p&gt;\r\n', '', '', '', ''),
+(5, 3, 'Условия соглашения', '&lt;p&gt;\r\n	Условия соглашения&lt;/p&gt;\r\n', '', '', '', ''),
+(3, 3, 'Политика безопасности', '&lt;p&gt;\r\n	Политика безопасности&lt;/p&gt;\r\n', '', '', '', ''),
+(6, 3, 'Информация о доставке', '&lt;p&gt;\r\n	Информация о доставке&lt;/p&gt;\r\n', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1851,8 +1892,9 @@ CREATE TABLE `oc_language` (
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
-(1, 'Russian', 'ru-ru', 'ru_RU.UTF-8,ru_RU,russian', 'gb.png', 'english', 1, 1),
-(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1);
+(1, 'Українська', 'uk-ua', 'uk_UA.UTF-8,uk_UA,uk-ua,uk,ukrainian', 'uk-ua.png', 'uk-ua', 1, 1),
+(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1),
+(3, 'Russian', 'ru-ru', 'ru_RU.UTF-8,ru_RU,russian', 'gb.png', 'english', 1, 1);
 
 -----------------------------------------------------------
 
@@ -1872,23 +1914,23 @@ CREATE TABLE `oc_layout` (
 --
 
 INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
-(1, 'Главная'),
+(1, 'Головна'),
 (2, 'Товар'),
-(3, 'Категория'),
-(4, 'По-умолчанию'),
-(5, 'Список Производителей'),
-(6, 'Аккаунт'),
-(7, 'Оформление заказа'),
-(8, 'Контакты'),
-(9, 'Карта сайта'),
-(10, 'Партнерская программа'),
-(11, 'Информация'),
-(12, 'Сравнение'),
-(13, 'Поиск'),
+(3, 'Категорія'),
+(4, 'За замовчуванням'),
+(5, 'Список виробників'),
+(6, 'Обліковий запис'),
+(7, 'Оформлення замовлення'),
+(8, 'Контакти'),
+(9, 'Карта сайту'),
+(10, 'Партнерська програма'),
+(11, 'Інформація (статті)'),
+(12, 'Порівняння товарів'),
+(13, 'Пошук'),
 (14, 'Блог'),
-(15, 'Категории Блога'),
-(16, 'Статьи Блога'),
-(17, 'Страница Производителя');
+(15, 'Категорії Блогу'),
+(16, 'Статті Блогу'),
+(17, 'Сторінка виробника');
 
 -- --------------------------------------------------------
 
@@ -2017,7 +2059,7 @@ CREATE TABLE `oc_length_class_description` (
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
 (1, 1, 'Сантиметр', 'см'),
 (1, 2, 'Centimeter', 'cm'),
-(2, 1, 'Миллиметр', 'мм'),
+(2, 1, 'Міліметр', 'мм'),
 (2, 2, 'Millimeter', 'mm'),
 (3, 1, 'Дюйм', 'in'),
 (3, 2, 'Inch', 'in');
@@ -2094,18 +2136,24 @@ CREATE TABLE `oc_manufacturer_description` (
 --
 
 INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `description3`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
-(8, 1, '&lt;br&gt;', '', '', '', '', ''),
+(8, 1, 'Опис виробника Apple', '', 'Заголовок - Apple', 'Мета опис - Apple', '', 'Всі товари виробника Apple'),
 (8, 2, '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
-(7, 1, '', '', '', '', '', ''),
+(8, 3, '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
+(7, 1, 'Опис виробника&amp;nbsp;Hewlett-Packard', '', 'Заголовок - Hewlett-Packard', 'Мета опис - Hewlett-Packard', '', 'Всі товари виробника Hewlett-Packard'),
 (7, 2, '', '', '', '', '', ''),
+(7, 3, '', '', '', '', '', ''),
 (6, 2, '', '', '', '', '', ''),
-(5, 1, '', '', '', '', '', ''),
+(6, 3, '', '', '', '', '', ''),
+(5, 1, 'Опис виробника&amp;nbsp;HTC', '', 'Заголовок - HTC', 'Мета опис - HTC', '', 'Всі товари виробника HTC'),
 (5, 2, '', '', '', '', '', ''),
-(6, 1, '', '', '', '', '', ''),
+(5, 3, '', '', '', '', '', ''),
+(6, 1, 'Опис виробника&amp;nbsp;Palm', '', 'Заголовок - Palm', 'Мета опис - Palm', '', 'Всі товари виробника Palm'),
 (9, 2, '', '', '', '', '', ''),
-(9, 1, '', '', '', '', '', ''),
-(10, 1, '', '', '', '', '', ''),
-(10, 2, '', '', '', '', '', '');
+(9, 3, '', '', '', '', '', ''),
+(9, 1, 'Опис виробника&amp;nbsp;Canon', '', 'Заголовок - Canon', 'Мета опис - Canon', '', 'Всі товари виробника Canon'),
+(10, 1, 'Опис виробника&amp;nbsp;Sony', '', 'Заголовок - Sony', 'Мета опис - Sony', '', 'Всі товари виробника Sony'),
+(10, 2, '', '', '', '', '', ''),
+(10, 3, '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -2277,17 +2325,17 @@ CREATE TABLE `oc_option_description` (
 --
 
 INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
-(1, 1, 'Radio'),
-(2, 1, 'Checkbox'),
-(4, 1, 'Text'),
-(6, 1, 'Textarea'),
-(8, 1, 'Date'),
-(7, 1, 'File'),
-(5, 1, 'Select'),
-(9, 1, 'Time'),
-(10, 1, 'Date &amp; Time'),
-(12, 1, 'Delivery Date'),
-(11, 1, 'Size'),
+(1, 1, 'Перемикач'),
+(2, 1, 'Прапорець'),
+(4, 1, 'Текст'),
+(6, 1, 'Текстова область'),
+(8, 1, 'Дата'),
+(7, 1, 'Файл'),
+(5, 1, 'Список'),
+(9, 1, 'Час'),
+(10, 1, 'Дата та час'),
+(12, 1, 'Дата доставки'),
+(11, 1, 'Розмір'),
 (2, 2, 'Checkbox'),
 (8, 2, 'Date'),
 (10, 2, 'Date &amp; Time'),
@@ -2298,7 +2346,18 @@ INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
 (11, 2, 'Size'),
 (4, 2, 'Text'),
 (6, 2, 'Textarea'),
-(9, 2, 'Time');
+(9, 2, 'Time'),
+(1, 3, 'Radio'),
+(2, 3, 'Checkbox'),
+(4, 3, 'Text'),
+(6, 3, 'Textarea'),
+(8, 3, 'Date'),
+(7, 3, 'File'),
+(5, 3, 'Select'),
+(9, 3, 'Time'),
+(10, 3, 'Date &amp; Time'),
+(12, 3, 'Delivery Date'),
+(11, 3, 'Size');
 
 -----------------------------------------------------------
 
@@ -2355,20 +2414,20 @@ CREATE TABLE `oc_option_value_description` (
 --
 
 INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
-(43, 1, 1, 'Large'),
-(32, 1, 1, 'Small'),
-(45, 1, 2, 'Checkbox 4'),
-(44, 1, 2, 'Checkbox 3'),
-(31, 1, 1, 'Medium'),
-(42, 1, 5, 'Yellow'),
-(41, 1, 5, 'Green'),
-(39, 1, 5, 'Red'),
-(40, 1, 5, 'Blue'),
-(23, 1, 2, 'Checkbox 1'),
-(24, 1, 2, 'Checkbox 2'),
-(48, 1, 11, 'Large'),
-(47, 1, 11, 'Medium'),
-(46, 1, 11, 'Small');
+(43, 1, 1, 'Великий'),
+(32, 1, 1, 'Маленький'),
+(45, 1, 2, 'Прапорець 4'),
+(44, 1, 2, 'Прапорець 3'),
+(31, 1, 1, 'Середній'),
+(42, 1, 5, 'Жовтий'),
+(41, 1, 5, 'Зелений'),
+(39, 1, 5, 'Червоний'),
+(40, 1, 5, 'Синій'),
+(23, 1, 2, 'Прапорець 1'),
+(24, 1, 2, 'Прапорець 2'),
+(48, 1, 11, 'Великий'),
+(47, 1, 11, 'Середній'),
+(46, 1, 11, 'Маленький');
 
 -----------------------------------------------------------
 
@@ -2609,19 +2668,19 @@ CREATE TABLE `oc_order_status` (
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
-(2, 1, 'В обработке'),
+(2, 1, 'В обробці'),
 (3, 1, 'Доставлено'),
-(7, 1, 'Отменено'),
-(5, 1, 'Сделка завершена'),
-(8, 1, 'Возврат'),
-(9, 1, 'Отмена и аннулирование'),
-(10, 1, 'Неудавшийся'),
-(11, 1, 'Возмещенный'),
-(12, 1, 'Полностью измененный'),
-(13, 1, 'Полный возврат'),
-(1, 1, 'Ожидание'),
-(15, 1, 'Обработано'),
-(14, 1, 'Истекло'),
+(7, 1, 'Скасовано'),
+(5, 1, 'Завершено'),
+(8, 1, 'Повернення'),
+(9, 1, 'Скасування та анулювання'),
+(10, 1, 'Помилкове'),
+(11, 1, 'Відшкодоване'),
+(12, 1, 'Змінене'),
+(13, 1, 'Повне повернення'),
+(1, 1, 'Очікування'),
+(15, 1, 'Оброблене'),
+(14, 1, 'Не актуальне'),
 (2, 2, 'Processing'),
 (8, 2, 'Denied'),
 (11, 2, 'Refunded'),
@@ -2634,9 +2693,23 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 (13, 2, 'Chargeback'),
 (5, 2, 'Complete'),
 (14, 2, 'Expired'),
-(16, 1, 'Анулированный'),
+(16, 1, 'Анульоване'),
 (16, 2, 'Voided'),
-(15, 2, 'Processed');
+(16, 3, 'Анулированный'),
+(15, 2, 'Processed'),
+(2, 3, 'В обработке'),
+(3, 3, 'Доставлено'),
+(7, 3, 'Отменено'),
+(5, 3, 'Сделка завершена'),
+(8, 3, 'Возврат'),
+(9, 3, 'Отмена и аннулирование'),
+(10, 3, 'Неудавшийся'),
+(11, 3, 'Возмещенный'),
+(12, 3, 'Полностью измененный'),
+(13, 3, 'Полный возврат'),
+(1, 3, 'Ожидание'),
+(15, 3, 'Обработано'),
+(14, 3, 'Истекло');
 
 -- --------------------------------------------------------
 
@@ -3422,12 +3495,15 @@ CREATE TABLE `oc_return_action` (
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
-(1, 1, 'Возмещенный'),
-(2, 1, 'Возврат средств'),
-(3, 1, 'Отправлена замена'),
+(1, 1, 'Відшкодовано'),
+(2, 1, 'Повернення коштів'),
+(3, 1, 'Відправлена заміна'),
 (1, 2, 'Refunded'),
 (3, 2, 'Replacement Sent'),
-(2, 2, 'Credit Issued');
+(2, 2, 'Credit Issued'),
+(1, 3, 'Возмещенный'),
+(2, 3, 'Возврат средств'),
+(3, 3, 'Отправлена замена');
 
 -- --------------------------------------------------------
 
@@ -3465,15 +3541,20 @@ CREATE TABLE `oc_return_reason` (
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
-(1, 1, 'Получен неисправным (сломанным)'),
+(1, 1, 'Отримано/доставлено несправним (зламаним)'),
+(1, 3, 'Получен неисправным (сломанным)'),
 (1, 2, 'Dead On Arrival'),
-(2, 1, 'Получен не тот (ошибочный) товар'),
+(2, 1, 'Отримано не той (помилковий) товар'),
+(2, 3, 'Получен не тот (ошибочный) товар'),
 (2, 2, 'Received Wrong Item'),
-(3, 1, 'Заказан по ошибке'),
+(3, 1, 'Помилкове замовлення'),
+(3, 3, 'Заказан по ошибке'),
 (3, 2, 'Order Error'),
-(4, 1, 'Неисправен, пожалуйста укажите/приложите подробности'),
+(4, 1, 'Несправний, будь ласка, вкажіть подробиці'),
+(4, 3, 'Неисправен, пожалуйста укажите/приложите подробности'),
 (4, 2, 'Faulty, please supply details'),
-(5, 1, 'Другое (другая причина), пожалуйста укажите/приложите подробности'),
+(5, 1, 'Інше (інша причина), будь ласка, вкажіть/докладіть подробиці'),
+(5, 3, 'Другое (другая причина), пожалуйста укажите/приложите подробности'),
 (5, 2, 'Other, please supply details');
 
 -- --------------------------------------------------------
@@ -3495,12 +3576,15 @@ CREATE TABLE `oc_return_status` (
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
-(1, 1, 'В ожидании'),
-(3, 1, 'Выполнен'),
-(2, 1, 'Ожидание товара'),
+(1, 1, 'В очікуванні'),
+(3, 1, 'Виконано'),
+(2, 1, 'Очікування товару'),
 (1, 2, 'Pending'),
 (2, 2, 'Awaiting Products'),
-(3, 2, 'Complete');
+(3, 2, 'Complete'),
+(1, 3, 'В ожидании'),
+(3, 3, 'Выполнен'),
+(2, 3, 'Ожидание товара');
 
 -- --------------------------------------------------------
 
@@ -3598,16 +3682,16 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_ftp_port', '21', 0),
 (0, 'config', 'config_ftp_hostname', '', 0),
 (0, 'config', 'config_meta_title', 'Ваш магазин', 0),
-(0, 'config', 'config_meta_description', 'Мой магазин', 0),
+(0, 'config', 'config_meta_description', 'Мій магазин', 0),
 (0, 'config', 'config_meta_keyword', '', 0),
 (0, 'config', 'config_theme', 'default', 0),
 (0, 'config', 'config_layout_id', '4', 0),
-(0, 'config', 'config_country_id', '176', 0),
-(0, 'config', 'config_zone_id', '2761', 0),
-(0, 'config', 'config_timezone', 'UTC', 0),
-(0, 'config', 'config_language', 'ru-ru', 0),
-(0, 'config', 'config_admin_language', 'ru-ru', 0),
-(0, 'config', 'config_currency', 'RUB', 0),
+(0, 'config', 'config_country_id', '220', 0),
+(0, 'config', 'config_zone_id', '3491', 0),
+(0, 'config', 'config_timezone', 'Europe/Kyiv', 0),
+(0, 'config', 'config_language', 'uk-ua', 0),
+(0, 'config', 'config_admin_language', 'uk-ua', 0),
+(0, 'config', 'config_currency', 'UAH', 0),
 (0, 'config', 'config_currency_auto', '1', 0),
 (0, 'config', 'config_length_class_id', '1', 0),
 (0, 'config', 'config_weight_class_id', '1', 0),
@@ -3655,7 +3739,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_email', 'demo@opencart.com', 0),
 (0, 'config', 'config_geocode', '', 0),
 (0, 'config', 'config_owner', 'Ваш магазин', 0),
-(0, 'config', 'config_address', 'Адрес', 0),
+(0, 'config', 'config_address', 'Адреса', 0),
 (0, 'config', 'config_name', 'Ваш магазин', 0),
 (0, 'config', 'config_seo_url', '0', 0),
 (0, 'config', 'config_file_max_size', '300000', 0),
@@ -3793,10 +3877,10 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'developer', 'developer_theme', '1', 0),
 (0, 'developer', 'developer_sass', '1', 0),
 (0, 'configblog', 'configblog_name', 'Блог', 0),
-(0, 'configblog', 'configblog_html_h1', 'Блог для интернет магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_title', 'Блог для интернет магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_description', 'Блог для интернет магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_keyword', 'Блог для интернет магазина на OpenCart', 0),
+(0, 'configblog', 'configblog_html_h1', 'Блог для інтернет-магазину на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_title', 'Блог для інтернет-магазину на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_description', 'Блог для інтернет-магазину на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_keyword', 'Блог для інтернет-магазину на OpenCart', 0),
 (0, 'configblog', 'configblog_article_count', '1', 0),
 (0, 'configblog', 'configblog_article_limit', '20', 0),
 (0, 'configblog', 'configblog_article_description_length', '200', 0),
@@ -3812,8 +3896,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'configblog', 'configblog_image_article_height', '150', 0),
 (0, 'configblog', 'configblog_image_related_width', '200', 0),
 (0, 'configblog', 'configblog_image_related_height', '200', 0),
-(0, 'config', 'config_currency_engine', 'cbr', 0),
-(0, 'currency_cbr', 'currency_cbr_status', '1', 0),
+(0, 'config', 'config_currency_engine', 'nbu', 0),
 (0, 'currency_nbu', 'currency_nbu_status', '1', 0),
 (0, 'currency_ecb', 'currency_ecb_status', '1', 0),
 (0, 'currency_fixer', 'currency_fixer_status', '0', 0),
@@ -3850,10 +3933,10 @@ CREATE TABLE `oc_stock_status` (
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
-(7, 1, 'В наличии'),
-(8, 1, 'Предзаказ'),
-(5, 1, 'Нет в наличии'),
-(6, 1, 'Ожидание 2-3 дня'),
+(7, 1, 'В наявності'),
+(8, 1, 'Під замовлення'),
+(5, 1, 'Немає в наявності'),
+(6, 1, 'Очікується через 2-3 дні'),
 (7, 2, 'In Stock'),
 (8, 2, 'Pre-Order'),
 (5, 2, 'Out Of Stock'),
@@ -4299,7 +4382,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Administrator', '{"access":["blog\/article","blog\/category","blog\/review","blog\/setting","catalog\/attribute","catalog\/attribute_group","catalog\/category","catalog\/download","catalog\/filter","catalog\/information","catalog\/manufacturer","catalog\/option","catalog\/product","catalog\/recurring","catalog\/review","common\/column_left","common\/developer","common\/filemanager","common\/profile","common\/security","customer\/custom_field","customer\/customer","customer\/customer_approval","customer\/customer_group","design\/banner","design\/layout","design\/seo_url","design\/theme","design\/translation","event\/language","event\/statistics","event\/theme","extension\/advertise\/google","extension\/analytics\/google","extension\/captcha\/basic","extension\/captcha\/google","extension\/currency\/cbr","extension\/currency\/ecb","extension\/currency\/fixer","extension\/currency\/nbu","extension\/dashboard\/activity","extension\/dashboard\/chart","extension\/dashboard\/customer","extension\/dashboard\/domovoy","extension\/dashboard\/map","extension\/dashboard\/online","extension\/dashboard\/order","extension\/dashboard\/recent","extension\/dashboard\/sale","extension\/extension\/advertise","extension\/extension\/analytics","extension\/extension\/captcha","extension\/extension\/currency","extension\/extension\/dashboard","extension\/extension\/feed","extension\/extension\/fraud","extension\/extension\/menu","extension\/extension\/module","extension\/extension\/payment","extension\/extension\/promotion","extension\/extension\/report","extension\/extension\/shipping","extension\/extension\/theme","extension\/extension\/total","extension\/feed\/google_base","extension\/feed\/google_sitemap","extension\/feed\/unisender","extension\/feed\/yandex_market","extension\/feed\/yandex_turbo","extension\/fraud\/fraudlabspro","extension\/fraud\/ip","extension\/fraud\/maxmind","extension\/module\/account","extension\/module\/amazon_login","extension\/module\/amazon_pay","extension\/module\/banner","extension\/module\/bestseller","extension\/module\/blog_category","extension\/module\/blog_featured","extension\/module\/blog_latest","extension\/module\/carousel","extension\/module\/category","extension\/module\/divido_calculator","extension\/module\/featured","extension\/module\/featured_article","extension\/module\/featured_product","extension\/module\/filter","extension\/module\/google_hangouts","extension\/module\/html","extension\/module\/information","extension\/module\/klarna_checkout_module","extension\/module\/latest","extension\/module\/laybuy_layout","extension\/module\/paypal_smart_button","extension\/module\/pilibaba_button","extension\/module\/pp_braintree_button","extension\/module\/sagepay_direct_cards","extension\/module\/sagepay_server_cards","extension\/module\/slideshow","extension\/module\/special","extension\/module\/store","extension\/payment\/alipay","extension\/payment\/alipay_cross","extension\/payment\/amazon_login_pay","extension\/payment\/authorizenet_aim","extension\/payment\/authorizenet_sim","extension\/payment\/bank_transfer","extension\/payment\/bluepay_hosted","extension\/payment\/bluepay_redirect","extension\/payment\/cardconnect","extension\/payment\/cardinity","extension\/payment\/cheque","extension\/payment\/cod","extension\/payment\/divido","extension\/payment\/eway","extension\/payment\/firstdata","extension\/payment\/firstdata_remote","extension\/payment\/free_checkout","extension\/payment\/g2apay","extension\/payment\/globalpay","extension\/payment\/globalpay_remote","extension\/payment\/klarna_account","extension\/payment\/klarna_checkout","extension\/payment\/klarna_invoice","extension\/payment\/laybuy","extension\/payment\/liqpay","extension\/payment\/nochex","extension\/payment\/ocstore_w1","extension\/payment\/paymate","extension\/payment\/paypal","extension\/payment\/paypoint","extension\/payment\/payza","extension\/payment\/perpetual_payments","extension\/payment\/pilibaba","extension\/payment\/pp_braintree","extension\/payment\/pp_express","extension\/payment\/pp_payflow","extension\/payment\/pp_payflow_iframe","extension\/payment\/pp_pro","extension\/payment\/pp_pro_iframe","extension\/payment\/pp_standard","extension\/payment\/realex","extension\/payment\/realex_remote","extension\/payment\/sagepay_direct","extension\/payment\/sagepay_server","extension\/payment\/sagepay_us","extension\/payment\/securetrading_pp","extension\/payment\/securetrading_ws","extension\/payment\/skrill","extension\/payment\/squareup","extension\/payment\/twocheckout","extension\/payment\/web_payment_software","extension\/payment\/webmoney_wmb","extension\/payment\/webmoney_wme","extension\/payment\/webmoney_wmk","extension\/payment\/webmoney_wmr","extension\/payment\/webmoney_wmu","extension\/payment\/webmoney_wmv","extension\/payment\/webmoney_wmz","extension\/payment\/wechat_pay","extension\/payment\/worldpay","extension\/report\/customer_activity","extension\/report\/customer_order","extension\/report\/customer_reward","extension\/report\/customer_search","extension\/report\/customer_transaction","extension\/report\/marketing","extension\/report\/product_purchased","extension\/report\/product_viewed","extension\/report\/sale_coupon","extension\/report\/sale_order","extension\/report\/sale_return","extension\/report\/sale_shipping","extension\/report\/sale_tax","extension\/shipping\/auspost","extension\/shipping\/ec_ship","extension\/shipping\/fedex","extension\/shipping\/flat","extension\/shipping\/free","extension\/shipping\/item","extension\/shipping\/parcelforce_48","extension\/shipping\/pickup","extension\/shipping\/royal_mail","extension\/shipping\/ups","extension\/shipping\/usps","extension\/shipping\/weight","extension\/theme\/default","extension\/total\/coupon","extension\/total\/credit","extension\/total\/handling","extension\/total\/klarna_fee","extension\/total\/low_order_fee","extension\/total\/reward","extension\/total\/shipping","extension\/total\/sub_total","extension\/total\/tax","extension\/total\/total","extension\/total\/voucher","localisation\/country","localisation\/currency","localisation\/geo_zone","localisation\/language","localisation\/length_class","localisation\/location","localisation\/order_status","localisation\/return_action","localisation\/return_reason","localisation\/return_status","localisation\/stock_status","localisation\/tax_class","localisation\/tax_rate","localisation\/weight_class","localisation\/zone","mail\/affiliate","mail\/customer","mail\/forgotten","mail\/return","mail\/reward","mail\/transaction","marketing\/contact","marketing\/coupon","marketing\/marketing","marketplace\/api","marketplace\/event","marketplace\/extension","marketplace\/install","marketplace\/installer","marketplace\/marketplace","marketplace\/modification","marketplace\/opencartforum","report\/online","report\/report","report\/statistics","sale\/order","sale\/recurring","sale\/return","sale\/voucher","sale\/voucher_theme","search\/search","setting\/setting","setting\/store","startup\/error","startup\/event","startup\/login","startup\/permission","startup\/router","startup\/sass","startup\/startup","tool\/backup","tool\/log","tool\/upload","user\/api","user\/user","user\/user_permission"],"modify":["blog\/article","blog\/category","blog\/review","blog\/setting","catalog\/attribute","catalog\/attribute_group","catalog\/category","catalog\/download","catalog\/filter","catalog\/information","catalog\/manufacturer","catalog\/option","catalog\/product","catalog\/recurring","catalog\/review","common\/column_left","common\/developer","common\/filemanager","common\/profile","common\/security","customer\/custom_field","customer\/customer","customer\/customer_approval","customer\/customer_group","design\/banner","design\/layout","design\/seo_url","design\/theme","design\/translation","event\/language","event\/statistics","event\/theme","extension\/advertise\/google","extension\/analytics\/google","extension\/captcha\/basic","extension\/captcha\/google","extension\/currency\/cbr","extension\/currency\/ecb","extension\/currency\/fixer","extension\/currency\/nbu","extension\/dashboard\/activity","extension\/dashboard\/chart","extension\/dashboard\/customer","extension\/dashboard\/domovoy","extension\/dashboard\/map","extension\/dashboard\/online","extension\/dashboard\/order","extension\/dashboard\/recent","extension\/dashboard\/sale","extension\/extension\/advertise","extension\/extension\/analytics","extension\/extension\/captcha","extension\/extension\/currency","extension\/extension\/dashboard","extension\/extension\/feed","extension\/extension\/fraud","extension\/extension\/menu","extension\/extension\/module","extension\/extension\/payment","extension\/extension\/promotion","extension\/extension\/report","extension\/extension\/shipping","extension\/extension\/theme","extension\/extension\/total","extension\/feed\/google_base","extension\/feed\/google_sitemap","extension\/feed\/unisender","extension\/feed\/yandex_market","extension\/feed\/yandex_turbo","extension\/fraud\/fraudlabspro","extension\/fraud\/ip","extension\/fraud\/maxmind","extension\/module\/account","extension\/module\/amazon_login","extension\/module\/amazon_pay","extension\/module\/banner","extension\/module\/bestseller","extension\/module\/blog_category","extension\/module\/blog_featured","extension\/module\/blog_latest","extension\/module\/carousel","extension\/module\/category","extension\/module\/divido_calculator","extension\/module\/featured","extension\/module\/featured_article","extension\/module\/featured_product","extension\/module\/filter","extension\/module\/google_hangouts","extension\/module\/html","extension\/module\/information","extension\/module\/klarna_checkout_module","extension\/module\/latest","extension\/module\/laybuy_layout","extension\/module\/paypal_smart_button","extension\/module\/pilibaba_button","extension\/module\/pp_braintree_button","extension\/module\/sagepay_direct_cards","extension\/module\/sagepay_server_cards","extension\/module\/slideshow","extension\/module\/special","extension\/module\/store","extension\/payment\/alipay","extension\/payment\/alipay_cross","extension\/payment\/amazon_login_pay","extension\/payment\/authorizenet_aim","extension\/payment\/authorizenet_sim","extension\/payment\/bank_transfer","extension\/payment\/bluepay_hosted","extension\/payment\/bluepay_redirect","extension\/payment\/cardconnect","extension\/payment\/cardinity","extension\/payment\/cheque","extension\/payment\/cod","extension\/payment\/divido","extension\/payment\/eway","extension\/payment\/firstdata","extension\/payment\/firstdata_remote","extension\/payment\/free_checkout","extension\/payment\/g2apay","extension\/payment\/globalpay","extension\/payment\/globalpay_remote","extension\/payment\/klarna_account","extension\/payment\/klarna_checkout","extension\/payment\/klarna_invoice","extension\/payment\/laybuy","extension\/payment\/liqpay","extension\/payment\/nochex","extension\/payment\/ocstore_w1","extension\/payment\/paymate","extension\/payment\/paypal","extension\/payment\/paypoint","extension\/payment\/payza","extension\/payment\/perpetual_payments","extension\/payment\/pilibaba","extension\/payment\/pp_braintree","extension\/payment\/pp_express","extension\/payment\/pp_payflow","extension\/payment\/pp_payflow_iframe","extension\/payment\/pp_pro","extension\/payment\/pp_pro_iframe","extension\/payment\/pp_standard","extension\/payment\/realex","extension\/payment\/realex_remote","extension\/payment\/sagepay_direct","extension\/payment\/sagepay_server","extension\/payment\/sagepay_us","extension\/payment\/securetrading_pp","extension\/payment\/securetrading_ws","extension\/payment\/skrill","extension\/payment\/squareup","extension\/payment\/twocheckout","extension\/payment\/web_payment_software","extension\/payment\/webmoney_wmb","extension\/payment\/webmoney_wme","extension\/payment\/webmoney_wmk","extension\/payment\/webmoney_wmr","extension\/payment\/webmoney_wmu","extension\/payment\/webmoney_wmv","extension\/payment\/webmoney_wmz","extension\/payment\/wechat_pay","extension\/payment\/worldpay","extension\/report\/customer_activity","extension\/report\/customer_order","extension\/report\/customer_reward","extension\/report\/customer_search","extension\/report\/customer_transaction","extension\/report\/marketing","extension\/report\/product_purchased","extension\/report\/product_viewed","extension\/report\/sale_coupon","extension\/report\/sale_order","extension\/report\/sale_return","extension\/report\/sale_shipping","extension\/report\/sale_tax","extension\/shipping\/auspost","extension\/shipping\/ec_ship","extension\/shipping\/fedex","extension\/shipping\/flat","extension\/shipping\/free","extension\/shipping\/item","extension\/shipping\/parcelforce_48","extension\/shipping\/pickup","extension\/shipping\/royal_mail","extension\/shipping\/ups","extension\/shipping\/usps","extension\/shipping\/weight","extension\/theme\/default","extension\/total\/coupon","extension\/total\/credit","extension\/total\/handling","extension\/total\/klarna_fee","extension\/total\/low_order_fee","extension\/total\/reward","extension\/total\/shipping","extension\/total\/sub_total","extension\/total\/tax","extension\/total\/total","extension\/total\/voucher","localisation\/country","localisation\/currency","localisation\/geo_zone","localisation\/language","localisation\/length_class","localisation\/location","localisation\/order_status","localisation\/return_action","localisation\/return_reason","localisation\/return_status","localisation\/stock_status","localisation\/tax_class","localisation\/tax_rate","localisation\/weight_class","localisation\/zone","mail\/affiliate","mail\/customer","mail\/forgotten","mail\/return","mail\/reward","mail\/transaction","marketing\/contact","marketing\/coupon","marketing\/marketing","marketplace\/api","marketplace\/event","marketplace\/extension","marketplace\/install","marketplace\/installer","marketplace\/marketplace","marketplace\/modification","marketplace\/opencartforum","report\/online","report\/report","report\/statistics","sale\/order","sale\/recurring","sale\/return","sale\/voucher","sale\/voucher_theme","search\/search","setting\/setting","setting\/store","startup\/error","startup\/event","startup\/login","startup\/permission","startup\/router","startup\/sass","startup\/startup","tool\/backup","tool\/log","tool\/upload","user\/api","user\/user","user\/user_permission"]}'),
+(1, 'Administrator', '{"access":["blog\/article","blog\/category","blog\/review","blog\/setting","catalog\/attribute","catalog\/attribute_group","catalog\/category","catalog\/download","catalog\/filter","catalog\/information","catalog\/manufacturer","catalog\/option","catalog\/product","catalog\/recurring","catalog\/review","common\/column_left","common\/developer","common\/filemanager","common\/profile","common\/security","customer\/custom_field","customer\/customer","customer\/customer_approval","customer\/customer_group","design\/banner","design\/layout","design\/seo_url","design\/theme","design\/translation","event\/language","event\/statistics","event\/theme","extension\/advertise\/google","extension\/analytics\/google","extension\/captcha\/basic","extension\/captcha\/google","extension\/currency\/ecb","extension\/currency\/fixer","extension\/currency\/nbu","extension\/dashboard\/activity","extension\/dashboard\/chart","extension\/dashboard\/customer","extension\/dashboard\/domovoy","extension\/dashboard\/map","extension\/dashboard\/online","extension\/dashboard\/order","extension\/dashboard\/recent","extension\/dashboard\/sale","extension\/extension\/advertise","extension\/extension\/analytics","extension\/extension\/captcha","extension\/extension\/currency","extension\/extension\/dashboard","extension\/extension\/feed","extension\/extension\/fraud","extension\/extension\/menu","extension\/extension\/module","extension\/extension\/payment","extension\/extension\/promotion","extension\/extension\/report","extension\/extension\/shipping","extension\/extension\/theme","extension\/extension\/total","extension\/feed\/google_base","extension\/feed\/google_sitemap","extension\/feed\/unisender","extension\/feed\/yandex_market","extension\/feed\/yandex_turbo","extension\/fraud\/fraudlabspro","extension\/fraud\/ip","extension\/fraud\/maxmind","extension\/module\/account","extension\/module\/amazon_login","extension\/module\/amazon_pay","extension\/module\/banner","extension\/module\/bestseller","extension\/module\/blog_category","extension\/module\/blog_featured","extension\/module\/blog_latest","extension\/module\/carousel","extension\/module\/category","extension\/module\/divido_calculator","extension\/module\/featured","extension\/module\/featured_article","extension\/module\/featured_product","extension\/module\/filter","extension\/module\/google_hangouts","extension\/module\/html","extension\/module\/information","extension\/module\/klarna_checkout_module","extension\/module\/latest","extension\/module\/laybuy_layout","extension\/module\/paypal_smart_button","extension\/module\/pilibaba_button","extension\/module\/pp_braintree_button","extension\/module\/sagepay_direct_cards","extension\/module\/sagepay_server_cards","extension\/module\/slideshow","extension\/module\/special","extension\/module\/store","extension\/payment\/alipay","extension\/payment\/alipay_cross","extension\/payment\/amazon_login_pay","extension\/payment\/authorizenet_aim","extension\/payment\/authorizenet_sim","extension\/payment\/bank_transfer","extension\/payment\/bluepay_hosted","extension\/payment\/bluepay_redirect","extension\/payment\/cardconnect","extension\/payment\/cardinity","extension\/payment\/cheque","extension\/payment\/cod","extension\/payment\/divido","extension\/payment\/eway","extension\/payment\/firstdata","extension\/payment\/firstdata_remote","extension\/payment\/free_checkout","extension\/payment\/g2apay","extension\/payment\/globalpay","extension\/payment\/globalpay_remote","extension\/payment\/klarna_account","extension\/payment\/klarna_checkout","extension\/payment\/klarna_invoice","extension\/payment\/laybuy","extension\/payment\/liqpay","extension\/payment\/nochex","extension\/payment\/ocstore_w1","extension\/payment\/paymate","extension\/payment\/paypal","extension\/payment\/paypoint","extension\/payment\/payza","extension\/payment\/perpetual_payments","extension\/payment\/pilibaba","extension\/payment\/pp_braintree","extension\/payment\/pp_express","extension\/payment\/pp_payflow","extension\/payment\/pp_payflow_iframe","extension\/payment\/pp_pro","extension\/payment\/pp_pro_iframe","extension\/payment\/pp_standard","extension\/payment\/realex","extension\/payment\/realex_remote","extension\/payment\/sagepay_direct","extension\/payment\/sagepay_server","extension\/payment\/sagepay_us","extension\/payment\/securetrading_pp","extension\/payment\/securetrading_ws","extension\/payment\/skrill","extension\/payment\/squareup","extension\/payment\/twocheckout","extension\/payment\/web_payment_software","extension\/payment\/webmoney_wmb","extension\/payment\/webmoney_wme","extension\/payment\/webmoney_wmk","extension\/payment\/webmoney_wmr","extension\/payment\/webmoney_wmu","extension\/payment\/webmoney_wmv","extension\/payment\/webmoney_wmz","extension\/payment\/wechat_pay","extension\/payment\/worldpay","extension\/report\/customer_activity","extension\/report\/customer_order","extension\/report\/customer_reward","extension\/report\/customer_search","extension\/report\/customer_transaction","extension\/report\/marketing","extension\/report\/product_purchased","extension\/report\/product_viewed","extension\/report\/sale_coupon","extension\/report\/sale_order","extension\/report\/sale_return","extension\/report\/sale_shipping","extension\/report\/sale_tax","extension\/shipping\/auspost","extension\/shipping\/ec_ship","extension\/shipping\/fedex","extension\/shipping\/flat","extension\/shipping\/free","extension\/shipping\/item","extension\/shipping\/parcelforce_48","extension\/shipping\/pickup","extension\/shipping\/royal_mail","extension\/shipping\/ups","extension\/shipping\/usps","extension\/shipping\/weight","extension\/theme\/default","extension\/total\/coupon","extension\/total\/credit","extension\/total\/handling","extension\/total\/klarna_fee","extension\/total\/low_order_fee","extension\/total\/reward","extension\/total\/shipping","extension\/total\/sub_total","extension\/total\/tax","extension\/total\/total","extension\/total\/voucher","localisation\/country","localisation\/currency","localisation\/geo_zone","localisation\/language","localisation\/length_class","localisation\/location","localisation\/order_status","localisation\/return_action","localisation\/return_reason","localisation\/return_status","localisation\/stock_status","localisation\/tax_class","localisation\/tax_rate","localisation\/weight_class","localisation\/zone","mail\/affiliate","mail\/customer","mail\/forgotten","mail\/return","mail\/reward","mail\/transaction","marketing\/contact","marketing\/coupon","marketing\/marketing","marketplace\/api","marketplace\/event","marketplace\/extension","marketplace\/install","marketplace\/installer","marketplace\/marketplace","marketplace\/modification","marketplace\/opencartforum","report\/online","report\/report","report\/statistics","sale\/order","sale\/recurring","sale\/return","sale\/voucher","sale\/voucher_theme","search\/search","setting\/setting","setting\/store","startup\/error","startup\/event","startup\/login","startup\/permission","startup\/router","startup\/sass","startup\/startup","tool\/backup","tool\/log","tool\/upload","user\/api","user\/user","user\/user_permission"],"modify":["blog\/article","blog\/category","blog\/review","blog\/setting","catalog\/attribute","catalog\/attribute_group","catalog\/category","catalog\/download","catalog\/filter","catalog\/information","catalog\/manufacturer","catalog\/option","catalog\/product","catalog\/recurring","catalog\/review","common\/column_left","common\/developer","common\/filemanager","common\/profile","common\/security","customer\/custom_field","customer\/customer","customer\/customer_approval","customer\/customer_group","design\/banner","design\/layout","design\/seo_url","design\/theme","design\/translation","event\/language","event\/statistics","event\/theme","extension\/advertise\/google","extension\/analytics\/google","extension\/captcha\/basic","extension\/captcha\/google","extension\/currency\/ecb","extension\/currency\/fixer","extension\/currency\/nbu","extension\/dashboard\/activity","extension\/dashboard\/chart","extension\/dashboard\/customer","extension\/dashboard\/domovoy","extension\/dashboard\/map","extension\/dashboard\/online","extension\/dashboard\/order","extension\/dashboard\/recent","extension\/dashboard\/sale","extension\/extension\/advertise","extension\/extension\/analytics","extension\/extension\/captcha","extension\/extension\/currency","extension\/extension\/dashboard","extension\/extension\/feed","extension\/extension\/fraud","extension\/extension\/menu","extension\/extension\/module","extension\/extension\/payment","extension\/extension\/promotion","extension\/extension\/report","extension\/extension\/shipping","extension\/extension\/theme","extension\/extension\/total","extension\/feed\/google_base","extension\/feed\/google_sitemap","extension\/feed\/unisender","extension\/feed\/yandex_market","extension\/feed\/yandex_turbo","extension\/fraud\/fraudlabspro","extension\/fraud\/ip","extension\/fraud\/maxmind","extension\/module\/account","extension\/module\/amazon_login","extension\/module\/amazon_pay","extension\/module\/banner","extension\/module\/bestseller","extension\/module\/blog_category","extension\/module\/blog_featured","extension\/module\/blog_latest","extension\/module\/carousel","extension\/module\/category","extension\/module\/divido_calculator","extension\/module\/featured","extension\/module\/featured_article","extension\/module\/featured_product","extension\/module\/filter","extension\/module\/google_hangouts","extension\/module\/html","extension\/module\/information","extension\/module\/klarna_checkout_module","extension\/module\/latest","extension\/module\/laybuy_layout","extension\/module\/paypal_smart_button","extension\/module\/pilibaba_button","extension\/module\/pp_braintree_button","extension\/module\/sagepay_direct_cards","extension\/module\/sagepay_server_cards","extension\/module\/slideshow","extension\/module\/special","extension\/module\/store","extension\/payment\/alipay","extension\/payment\/alipay_cross","extension\/payment\/amazon_login_pay","extension\/payment\/authorizenet_aim","extension\/payment\/authorizenet_sim","extension\/payment\/bank_transfer","extension\/payment\/bluepay_hosted","extension\/payment\/bluepay_redirect","extension\/payment\/cardconnect","extension\/payment\/cardinity","extension\/payment\/cheque","extension\/payment\/cod","extension\/payment\/divido","extension\/payment\/eway","extension\/payment\/firstdata","extension\/payment\/firstdata_remote","extension\/payment\/free_checkout","extension\/payment\/g2apay","extension\/payment\/globalpay","extension\/payment\/globalpay_remote","extension\/payment\/klarna_account","extension\/payment\/klarna_checkout","extension\/payment\/klarna_invoice","extension\/payment\/laybuy","extension\/payment\/liqpay","extension\/payment\/nochex","extension\/payment\/ocstore_w1","extension\/payment\/paymate","extension\/payment\/paypal","extension\/payment\/paypoint","extension\/payment\/payza","extension\/payment\/perpetual_payments","extension\/payment\/pilibaba","extension\/payment\/pp_braintree","extension\/payment\/pp_express","extension\/payment\/pp_payflow","extension\/payment\/pp_payflow_iframe","extension\/payment\/pp_pro","extension\/payment\/pp_pro_iframe","extension\/payment\/pp_standard","extension\/payment\/realex","extension\/payment\/realex_remote","extension\/payment\/sagepay_direct","extension\/payment\/sagepay_server","extension\/payment\/sagepay_us","extension\/payment\/securetrading_pp","extension\/payment\/securetrading_ws","extension\/payment\/skrill","extension\/payment\/squareup","extension\/payment\/twocheckout","extension\/payment\/web_payment_software","extension\/payment\/webmoney_wmb","extension\/payment\/webmoney_wme","extension\/payment\/webmoney_wmk","extension\/payment\/webmoney_wmr","extension\/payment\/webmoney_wmu","extension\/payment\/webmoney_wmv","extension\/payment\/webmoney_wmz","extension\/payment\/wechat_pay","extension\/payment\/worldpay","extension\/report\/customer_activity","extension\/report\/customer_order","extension\/report\/customer_reward","extension\/report\/customer_search","extension\/report\/customer_transaction","extension\/report\/marketing","extension\/report\/product_purchased","extension\/report\/product_viewed","extension\/report\/sale_coupon","extension\/report\/sale_order","extension\/report\/sale_return","extension\/report\/sale_shipping","extension\/report\/sale_tax","extension\/shipping\/auspost","extension\/shipping\/ec_ship","extension\/shipping\/fedex","extension\/shipping\/flat","extension\/shipping\/free","extension\/shipping\/item","extension\/shipping\/parcelforce_48","extension\/shipping\/pickup","extension\/shipping\/royal_mail","extension\/shipping\/ups","extension\/shipping\/usps","extension\/shipping\/weight","extension\/theme\/default","extension\/total\/coupon","extension\/total\/credit","extension\/total\/handling","extension\/total\/klarna_fee","extension\/total\/low_order_fee","extension\/total\/reward","extension\/total\/shipping","extension\/total\/sub_total","extension\/total\/tax","extension\/total\/total","extension\/total\/voucher","localisation\/country","localisation\/currency","localisation\/geo_zone","localisation\/language","localisation\/length_class","localisation\/location","localisation\/order_status","localisation\/return_action","localisation\/return_reason","localisation\/return_status","localisation\/stock_status","localisation\/tax_class","localisation\/tax_rate","localisation\/weight_class","localisation\/zone","mail\/affiliate","mail\/customer","mail\/forgotten","mail\/return","mail\/reward","mail\/transaction","marketing\/contact","marketing\/coupon","marketing\/marketing","marketplace\/api","marketplace\/event","marketplace\/extension","marketplace\/install","marketplace\/installer","marketplace\/marketplace","marketplace\/modification","marketplace\/opencartforum","report\/online","report\/report","report\/statistics","sale\/order","sale\/recurring","sale\/return","sale\/voucher","sale\/voucher_theme","search\/search","setting\/setting","setting\/store","startup\/error","startup\/event","startup\/login","startup\/permission","startup\/router","startup\/sass","startup\/startup","tool\/backup","tool\/log","tool\/upload","user\/api","user\/user","user\/user_permission"]}'),
 (10, 'Demonstration', '');
 
 -----------------------------------------------------------
@@ -4382,9 +4465,12 @@ CREATE TABLE `oc_voucher_theme_description` (
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
-(6, 1, 'Christmas'),
-(7, 1, 'Birthday'),
-(8, 1, 'General');
+(6, 1, 'Новий Рік'),
+(7, 1, 'День народження'),
+(8, 1, 'Подарунок'),
+(6, 2, 'Christmas'),
+(7, 2, 'Birthday'),
+(8, 2, 'General');
 
 -----------------------------------------------------------
 
@@ -4429,13 +4515,13 @@ CREATE TABLE `oc_weight_class_description` (
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
-(1, 1, 'Килограммы', 'кг'),
+(1, 1, 'Кілограми', 'кг'),
 (1, 2, 'Kilogram', 'kg'),
-(2, 1, 'Граммы', 'г'),
+(2, 1, 'Грами', 'г'),
 (2, 2, 'Gram', 'g'),
-(5, 1, 'Фунты', 'lb'),
+(5, 1, 'Фунти', 'lb'),
 (5, 2, 'Pound', 'lb'),
-(6, 1, 'Унции', 'oz'),
+(6, 1, 'Унції', 'oz'),
 (6, 2, 'Ounce', 'oz');
 
 -- --------------------------------------------------------
@@ -7840,32 +7926,32 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (3477, 219, 'Mbarara', 'MBR', 1),
 (3478, 219, 'Ntungamo', 'NTU', 1),
 (3479, 219, 'Rukungiri', 'RUK', 1),
-(3480, 220, 'Черкасская область', '71', 1),
-(3481, 220, 'Черниговская область', '74', 1),
-(3482, 220, 'Черновицкая область', '77', 1),
-(3483, 220, 'Крым', '43', 1),
-(3484, 220, 'Днепропетровская область', '12', 1),
-(3485, 220, 'Донецкая область', '14', 1),
-(3486, 220, 'Ивано-Франковская область', '26', 1),
-(3487, 220, 'Херсонская область', '65', 1),
-(3488, 220, 'Хмельницкая область', '68', 1),
-(3489, 220, 'Кировоградская область', '35', 1),
-(3490, 220, 'Киев', '30', 1),
-(3491, 220, 'Киевская область', '32', 1),
-(3492, 220, 'Луганская область', '09', 1),
-(3493, 220, 'Львовская область', '46', 1),
-(3494, 220, 'Николаевская область', '48', 1),
-(3495, 220, 'Одесская область', '51', 1),
-(3496, 220, 'Полтавская область', '53', 1),
-(3497, 220, 'Ровненская область', '56', 1),
+(3480, 220, 'Черкаська область', '71', 1),
+(3481, 220, 'Чернігівська область', '74', 1),
+(3482, 220, 'Чернівецька область', '77', 1),
+(3483, 220, 'Крим', '43', 1),
+(3484, 220, 'Дніпропетровська область', '12', 1),
+(3485, 220, 'Донецька область', '14', 1),
+(3486, 220, 'Івано-Франківська область', '26', 1),
+(3487, 220, 'Херсонська область', '65', 1),
+(3488, 220, 'Хмельницька область', '68', 1),
+(3489, 220, 'Кіровоградська область', '35', 1),
+(3490, 220, 'Київ', '30', 1),
+(3491, 220, 'Київська область', '32', 1),
+(3492, 220, 'Луганська область', '09', 1),
+(3493, 220, 'Львівська область', '46', 1),
+(3494, 220, 'Миколаївська область', '48', 1),
+(3495, 220, 'Одеська область', '51', 1),
+(3496, 220, 'Полтавська область', '53', 1),
+(3497, 220, 'Рівненська область', '56', 1),
 (3498, 220, 'Севастополь', '40', 1),
-(3499, 220, 'Сумская область', '59', 1),
-(3500, 220, 'Тернопольская область', '61', 1),
-(3501, 220, 'Винницкая область', '05', 1),
-(3502, 220, 'Волынская область', '07', 1),
-(3503, 220, 'Закарпатская область', '21', 1),
-(3504, 220, 'Запорожская область', '23', 1),
-(3505, 220, 'Житомирская область', '18', 1),
+(3499, 220, 'Сумська область', '59', 1),
+(3500, 220, 'Тернопільська область', '61', 1),
+(3501, 220, 'Вінницька область', '05', 1),
+(3502, 220, 'Волинська область', '07', 1),
+(3503, 220, 'Закарпатська область', '21', 1),
+(3504, 220, 'Запорізька область', '23', 1),
+(3505, 220, 'Житомирська область', '18', 1),
 (3506, 221, 'Abu Zaby', 'AZ', 1),
 (3507, 221, '''Ajman', 'AJ', 1),
 (3508, 221, 'Al Fujayrah', 'FU', 1),
@@ -8556,7 +8642,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (4221, 117, 'Zilupes novads', '0681801', 1),
 (4222, 43, 'Arica y Parinacota', 'AP', 1),
 (4223, 43, 'Los Rios', 'LR', 1),
-(4224, 220, 'Харьковская область', '63', 1),
+(4224, 220, 'Харківська область', '63', 1),
 (4225, 118, 'Beirut', 'LB-BR', 1),
 (4226, 118, 'Bekaa', 'LB-BE', 1),
 (4227, 118, 'Mount Lebanon', 'LB-ML', 1),
@@ -8764,10 +8850,10 @@ CREATE TABLE `oc_blog_category_description` (
 
 INSERT INTO `oc_blog_category_description` (`blog_category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
 (69, 2, 'News', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
-(70, 1, 'Обзоры', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
-(69, 1, 'Новости', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
-(71, 2, 'Анонсы', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
-(71, 1, 'Анонсы', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(70, 1, 'Огляди', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(69, 1, 'Новини', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(71, 2, 'Announcements', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(71, 1, 'Анонси', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (70, 2, 'Reviews', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '');
 
 -- --------------------------------------------------------
@@ -8922,13 +9008,17 @@ CREATE TABLE `oc_article_description` (
 --
 
 INSERT INTO `oc_article_description` (`article_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`, `tag`) VALUES
-(120, 1, 'CMS для интернет магазинов ocStore v3.x', '&lt;p&gt;Рады представить Вашему вниманию ocStore v3.x основанную на OPENCART v3.x&lt;/p&gt;\r\n', 'CMS для интернет магазинов ocStore v3.x это бесплатный функциональный движок для создания качественных продающих магазинов.', 'cms, opencart, ocstore', 'CMS для интернет магазинов ocStore v3.x - Скачать', 'CMS для интернет магазинов ocStore v3.x', ''),
+(120, 1, 'CMS для інтернет-магазинів ocStore v3.x', '&lt;p&gt;Раді представити Вашій увазі ocStore v3.x на основі OPENCART v3.x&lt;/p&gt;\r\n', 'CMS для інтернет-магазинів ocStore v3.x це безкоштовний функціональний движок для створення якісних магазинів, що продають.', 'cms, opencart, ocstore', 'CMS для інтернет-магазинів ocStore v3.x - Скачати', 'CMS для інтернет-магазинів ocStore v3.x', ''),
+(123, 1, 'Огляд Перший', '&lt;p&gt;Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-) Це перший фото огляд тут можна написати багато якогось тексту який описує фото огляд і розповідає що і як і чому навіщо :-)&lt;/p&gt;\r\n', 'Фото Огляд Перший', 'Фото Огляд Перший', 'Фото Огляд Перший', 'Фото Огляд Перший', ''),
+(124, 1, 'Важлива стаття', '&lt;p&gt;Це дуже важлива стаття, яку потрібно прочитати всім важливим людям про важливі події важливих людей :-)&lt;/p&gt;', '', '', '', '', ''),
+(125, 1, 'Перша новина', '&lt;p&gt;Це перша новина всім новинам новина :-)&lt;/p&gt;', '', '', '', '', ''),
+(120, 3, 'CMS для интернет магазинов ocStore v3.x', '&lt;p&gt;Рады представить Вашему вниманию ocStore v3.x основанную на OPENCART v3.x&lt;/p&gt;\r\n', 'CMS для интернет магазинов ocStore v3.x это бесплатный функциональный движок для создания качественных продающих магазинов.', 'cms, opencart, ocstore', 'CMS для интернет магазинов ocStore v3.x - Скачать', 'CMS для интернет магазинов ocStore v3.x', ''),
 (120, 2, 'CMS for online stores ocStore v3.x', '&lt;p&gt;&lt;span class=&quot;long_text&quot; id=&quot;result_box&quot; lang=&quot;en&quot;&gt;&lt;span class=&quot;hps&quot;&gt;Are pleased to announce&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;ocStore v3.x&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;based on&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;OpenCart v2.x&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\r\n', 'CMS for online stores ocStore v3.x is a free functional engine to create high-quality shops selling.', 'cms, opencart, ocstore', 'CMS for online stores ocStore v3.x - Download', 'CMS for online stores ocStore v3.x', ''),
-(123, 1, 'Обзор Первый', '&lt;p&gt;Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-)&lt;/p&gt;\r\n', 'Фото Обзор Первый', 'Фото Обзор Первый', 'Фото Обзор Первый', 'Фото Обзор Первый', ''),
+(123, 3, 'Обзор Первый', '&lt;p&gt;Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-) Это первый фото обзор тут можно написать много какого то текста который описывает фото обзор и говорит что и как и почему для чего :-)&lt;/p&gt;\r\n', 'Фото Обзор Первый', 'Фото Обзор Первый', 'Фото Обзор Первый', 'Фото Обзор Первый', ''),
 (123, 2, 'First Overview', '&lt;p&gt;&lt;span id=&quot;result_box&quot; lang=&quot;en&quot;&gt;&lt;span class=&quot;hps&quot;&gt;This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-) This is the first&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review of the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photos&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;here&lt;/span&gt;&lt;span&gt;, you can write&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;a lot of&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what that&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;that describes the&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;photo&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;review and&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what and how&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;and why&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;what&lt;/span&gt; &lt;span class=&quot;hps&quot;&gt;:-)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\r\n', 'First Photo Overview', 'First Photo Overview', 'First Photo Overview', 'First Photo Overview', ''),
 (124, 2, 'Важная статья', '&lt;p&gt;Это очень важная статья которую нужно прочитать всем важным людям про важные события важных людей :-)&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
-(124, 1, 'Важная статья', '&lt;p&gt;Это очень важная статья которую нужно прочитать всем важным людям про важные события важных людей :-)&lt;/p&gt;', '', '', '', '', ''),
-(125, 1, 'Первая новость', '&lt;p&gt;Это первая новость всем новостям новость :-)&lt;/p&gt;', '', '', '', '', ''),
+(124, 3, 'Важная статья', '&lt;p&gt;Это очень важная статья которую нужно прочитать всем важным людям про важные события важных людей :-)&lt;/p&gt;', '', '', '', '', ''),
+(125, 3, 'Первая новость', '&lt;p&gt;Это первая новость всем новостям новость :-)&lt;/p&gt;', '', '', '', '', ''),
 (125, 2, 'Первая новость', '&lt;p&gt;Это первая новость всем новостям новость :-)&lt;br&gt;&lt;/p&gt;', '', '', '', '', '');
 
 
