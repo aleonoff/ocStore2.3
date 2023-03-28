@@ -1,27 +1,27 @@
-/////////////////////////////////
-///       OpenCart V3.x     ///
-///  Инструкция по установке  ///
-///  https://ocstore.com  ///
-/////////////////////////////////
+///////////////////////////////////
+///       ocStore V3.x         ///
+///  Інструкція зі встановлення ///
+///  https://ocstore.com        ///
+///////////////////////////////////
 
 
-ПРИМЕЧАНИЕ: ТОЛЬКО ДЛЯ НОВОЙ УСТАНОВКИ!
-ЕСЛИ ОБНОВЛЕНИЕ В СУЩЕСТВУЮЩИЙ МАГАЗИН, НЕ ЗАБУДЬТЕ ПРОЧИТАТЬ UPGRADE.TXT
+ПРИМІТКА: ЦЕ ЛИШЕ ДЛЯ НОВОГО ВСТАНОВЛЕННЯ!
+ЯКЩО ОНОВЛЕННЯ В ІСНУЮЧИЙ МАГАЗИН, НЕ ЗАБУДЬТЕ ПРОЧИТАТИ UPGRADE.TXT
 
 
 -------
-Установка
+Встановлення
 -------
 These instructions are for a manual installation using FTP, cPanel or other web hosting Control Panel.
 
-- Установка на Linux -
+- Встановлення на Linux -
 
-1. Загрузите все ваши файлы и папки на ваш сервер из папки «Upload». Можно разархивировать в любое место на Ваш выбор.
-   Например: В cPanel должно быть в папке public_html/ и в Plesk должно быть в httpdocs/.
+1. Завантажте всі ваші файли та папки на ваш сервер з папки «Upload». Можна розархівувати в будь-яке місце на Ваш вибір.
+    Наприклад: У cPanel має бути в папці public_html/ і Plesk має бути в httpdocs/.
 
-2. Переименуйте config-dist.php в config.php и admin/config-dist.php в admin/config.php
+2. Перейменуйте config-dist.php на config.php і admin/config-dist.php на admin/config.php
 
-3. Для Linux/Unix убедитесь, что папки и файлы доступны для записи.
+3. Для Linux/Unix переконайтеся, що папки та файли доступні для запису.
 
 		chmod 0755 or 0777 system/storage/cache/
 		chmod 0755 or 0777 system/storage/download/
@@ -36,26 +36,26 @@ These instructions are for a manual installation using FTP, cPanel or other web 
 		chmod 0755 or 0777 config.php
 		chmod 0755 or 0777 admin/config.php
 
-		Если при правах 0755 не работает, попробуйте 0777.
+		Якщо при правах 0755 не працює, спробуйте 0777.
 
-4. Убедитесь, что у Вас установлена база данных MySQL и Вы имеете к ней доступ. НИ В КОЕМ СЛУЧАЕ НЕ ИСПОЛЬЗУЙТЕ ROOT ЛОГИН И ПАРОЛЬ.
+4. Упевніться, що у вас встановлено базу даних MySQL і ви маєте доступ до неї. НІ ЗА ЯКИХ ОБСТАВ НЕ ВИКОРИСТОВУЙТЕ ROOT ЛОГІН ТА ПАРОЛЬ.
 
-5. Посетите домашнюю страницу Вашего магазина.
-   Например: http://www.example.com или http://www.examle.com/store/
+5. Завітайте на домашню сторінку свого магазину.
+Наприклад: http://www.example.com або http://www.examle.com/store/
 
-6. Следуйте инструкциям на экране.
+6. Дотримуйтесь інструкцій на екрані.
 
-7. Удалите установочную директорию.
+7. Видаліть папку для встановлення.
 
-8. Если вы загрузили скомпилированную версию с папкой «vendor» - она должна быть загружена выше корневой директории (в той же папке, где public_html или httpdocs)
+8. Якщо ви завантажили скомпільовану версію з папкою Vendor, то вона повинна бути завантажена вище кореневої директорії (у тій же папці, де public_html або httpdocs)
 
-- Установка на Windows -
+Встановлення на Windows -
 
-1. Загрузите все ваши файлы и папки на ваш сервер из папки «Upload». Можно разархивировать в любое место на Ваш выбор. Наприммер /wwwroot/store или /wwwroot
+1. Завантажте всі файли та папки на свій сервер із папки «Upload». Їх можна розпакувати у будь-яке місце на ваш вибір. Наприклад /wwwroot/store або /wwwroot
 
-2. Переименуйте config-dist.php в config.php и admin/config-dist.php в admin/config.php
+2. Перейменуйте config-dist.php на config.php і admin/config-dist.php на admin/config.php
 
-3. Для Windows убедитесь, что папки и файлы доступны для записи
+3. Для Windows переконайтеся, що папки та файли доступні для запису.
 
 		system/storage/cache/
 		system/storage/download/
@@ -70,29 +70,14 @@ These instructions are for a manual installation using FTP, cPanel or other web 
 		config.php
 		admin/config.php
 
-4. Убедитесь, что у Вас установлена база данных MySQL и Вы имеете к ней доступ. НИ В КОЕМ СЛУЧАЕ НЕ ИСПОЛЬЗУЙТЕ ROOT ЛОГИН И ПАРОЛЬ.
+4. Переконайтеся, що у Вас встановлена база даних MySQL і Ви маєте доступ до неї. НІ В ЯКОМУ РАЗІ НЕ ВИКОРИСТОВУЙТЕ ROOT ЛОГІН І ПАРОЛЬ.
 
-5. Посетите домашнюю страницу Вашего магазина.
-   Например: http://www.example.com или http://www.examle.com/store/
+5. Завітайте на домашню сторінку Вашого магазину.
+    Наприклад: http://www.example.com або http://www.examle.com/store/
 
-6. Следуйте инструкциям на экране.
+6. Виконуйте вказівки на екрані.
 
-7. Удалите установочную директорию.
-
-- Локальная установка -
-
-Есть много веб-серверов для локальной установки, и большинство из них должны работать с ocStore из коробки. Например...
-
-http://www.apachefriends.org/en/xampp.html
-http://www.ampps.com/
-http://www.usbwebserver.net
-http://www.wampserver.com/
-http://www.denwer.ru/
-Видеоурок по установке denwer https://www.youtube.com/watch?v=wQUjBVJGTnk
-
-
-
-
+7. Видаліть інсталяційну директорію.
 
 ----------------------------
 COMPOSER OR NOT TO COMPOSER

@@ -112,7 +112,7 @@ $_['help_download']          = '(Autocomplete)';
 $_['help_related']           = '(Autocomplete)';
 $_['help_tag']               = 'Comma separated';
 $_['help_main_category']     = 'Select main category';
-$_['help_noindex']           = 'Indexing in the search engines Google, Yandex, Bing and others';
+$_['help_noindex']           = 'Indexing in the search engines Google,  Bing and others';
 
 // Error
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';

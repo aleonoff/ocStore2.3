@@ -41,7 +41,7 @@ $_['entry_layout']           = 'Layout Override';
 $_['help_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the keyword is globally unique.';
 $_['help_top']               = 'Display in the top menu bar. Only works for the top parent categories.';
 $_['help_column']            = 'Number of columns to use for the bottom 3 categories. Only works for the top parent categories.';
-$_['help_noindex']           = 'indexing in search engines Google, Yandex, Bing and other';
+$_['help_noindex']           = 'indexing in search engines Google,  Bing and other';
 
 // Error
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';

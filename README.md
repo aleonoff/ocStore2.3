@@ -1,19 +1,43 @@
 # ocStore
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.3-8892BF.svg?style=flat-square)](https://php.net/)
+## Короткий опис
 
+ocStore - це онлайн-магазин, заснований на базі [OpenCart](https://github.com/opencart/opencart/) і має відкритий вихідний код. Дуже Простое і надзвичайне рішення для бажаючих створити власний онлайн бізнес пінімальних затрах.
 
-[Опис українською](https://github.com/ocStore/ocStore/blob/ocStore-3-0-3-7/README_UA.md)
+## Баг-трекер
 
-[Описание на русском](https://github.com/ocStore/ocStore/blob/ocStore-3-0-3-7/README_UA.md)
+Перш ніж створити повідомлення про помилку, будь ласка, прочитайте інструкцію:
 
-## License
+1. Відвідайте [OpenCart форум](https://opencartforum.com/), можливо, що там, Ви знайдете рішення.
+2. Перевірте всі відкриті (і закриті) запитання на [Баг-трекер GitHub](https://github.com/ocstore/ocstore/issues).
+3. Якщо помилка пов'язана з ядром OpenCart, будь ласка, створіть звіт [на форумі](https://opencartforum.com/forum/134-opencart-3x-otchyoty-ob-oshibkah/).
+4. ПРОЧИТАЙТЕ [увесь список змін](https://github.com/ocStore/ocStore/blob/ocStore-3-0-3-7/changelog.md).
+5. Щоб знайти відповідь на Ваше запитання, використовуйте [пошук на форумі](https://opencartforum.com/search/).
+6. Будь ласка, переконайтеся, що ця проблема (або помилка) не пов'язана з сервером.
 
-[GNU General Public License version 3 (GPLv3)](https://github.com/ocStore/ocStore/blob/ocStore-3-0-3-7/license.txt)
+Якщо у Вас виникли якісь додаткові питання, будь ласка, відвідайте наш форум (https://opencartforum.com/)
 
-## Links
+**Важливе зауваження!**
+- Якщо Ваше повідомлення про помилку не пов'язане з основним кодом OpenCart (наприклад, некоректна робота модуля або конфігурація сервера), то питання буде закрито без причини. З таких питань звертайтесь до автора доповнення, або скористайтесь розділом [платних послуг](https://opencartforum.com/forum/22-послуги/) на форумі.
+- Якщо Ви бажаєте повідомити про серйозну загрозу безпеці в коді OpenCart, будь ласка, надішліть особисте повідомлення будь-якому з модераторів форуму, або створіть тему в розділі [Питання безпеки](https://opencartforum.com/forum/41-питание-безопасности/ ).
+- Якщо у Вас є якісь нові ідеї або поради, скористайтесь відповідним розділом на форумі [Пропозиції та побажання](https://opencartforum.com/forum/31-пропозиції-і-побажання/).
 
-- [Сайт ocStore] (https://ocstore.com/)
-- [OpenCart форум] (https://opencartforum.com/)
-- [Facebook] (https://www.facebook.com/opencartforum)
-- [YouTube] (https://www.youtube.com/c/OpenCartForumCom)
+## Релізи
+
+Для отримання повідомлень про нові релізи, примітки адміністратора або повідомлення від групи OCTeam, відкрийте на форумі [Новини та анонси](https://opencartforum.com/forum/3-новини-і-анонси/), та зверху праворуч - натисніть на кнопку "Стежити за форумом".
+
+## Встановлення та Оновлення
+
+Будь ласка, прочитайте відповідний файл (install.txt/upgrade.txt) всередині архіву, або скористайтесь розділом на форумі [Установка, оновлення, налаштування](https://opencartforum.com/forum/6-установка-оновлення-налаштування/).
+
+## Ліцензія
+
+[GNU General Public License версії 3 (GPLv3)](https://github.com/ocStore/ocStore/blob/ocStore-3-0-3-7/license.txt)
+
+## Посилання
+
+- [Сайт ocStore](https://ocstore.com/)
+- [OpenCart форум](https://opencartforum.com/)
+- [Документація](https://docs.ocstore.com/)
+- [Facebook](https://www.facebook.com/opencartforum)
+- [YouTube](https://www.youtube.com/c/OpenCartForumCom)

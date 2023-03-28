@@ -22,8 +22,8 @@ $_['entry_theme']      = 'Шаблон';
 $_['entry_sass']       = 'SASS';
 $_['entry_cache']      = 'Кеш';
 $_['entry_systemcache'] = 'Системний кеш';
-$_['entry_imgcache']   = 'Кеш зображень';
-$_['entry_allcache']   = 'Весь кеш';
+$_['entry_imgcache']   = 'Ресайзи зображень (це не кеш, без вагомої причини не видаляти)';
+$_['entry_allcache']   = 'Видалити весь кеш та ресайзи зображень';
 
 // Button
 $_['button_on']        = 'Вкл';

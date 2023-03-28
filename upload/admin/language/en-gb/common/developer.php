@@ -24,8 +24,8 @@ $_['entry_theme']      = 'Theme';
 $_['entry_sass']       = 'SASS';
 $_['entry_cache']      = 'Cache';
 $_['entry_systemcache']      = 'System Cache';
-$_['entry_imgcache']       = 'Images Cache';
-$_['entry_allcache']      = 'All Cache';
+$_['entry_imgcache']       = 'Image resizes (this is not a cache, do not delete without a good reason)';
+$_['entry_allcache']      = 'Clear all cache and resize images';
 
 // Button
 $_['button_on']        = 'On';
