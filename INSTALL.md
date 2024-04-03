@@ -1,77 +1,75 @@
-# INSTALL
+# ВСТАНОВЛЕННЯ
 
-* This is for __new installation only__
-* These instructions are for a manual installation using FTP, cPanel or other web hosting Control Panel.
+* Це лише для __нової установки__
+* Ці інструкції для ручної установки через FTP, cPanel або іншу панель управління веб-хостингом.
 
+Якщо ви __оновлюєте вашу існуючу корзину__, обов'язково прочитайте [інструкції з оновлення](UPGRADE.md) замість цього
 
-If you are __upgrading your existing cart__, be sure to read the [upgrade instructions](UPGRADE.md) instead
+## Установка для Linux
 
+1. Завантажте всі файли та папки на ваш сервер з папки "Upload", розмістіть їх у корені вашого веб-сайту. Корінь веб-сайту відрізняється на різних серверах, в cPanel він повинен бути `public_html/`, а в Plesk - `httpdocs/`.
+2. Переконайтеся, що ваш веб-користувач має дозвіл читати, писати та виконувати всі директорії під кореневому каталозі веб-сайту.
+3. Перейменуйте config-dist.php на config.php та admin/config-dist.php на `admin/config.php`
+4. Для Linux/Unix переконайтеся, що наступні папки та файли доступні для запису.
 
-## Linux Install
+   	chmod 0777 config.php
+   	chmod 0777 admin/config.php
 
-1. Upload all of the files and folders to your server from the "Upload" folder, place them in your web root. The web root is different on some servers, cPanel it should be ```public_html/``` and on Plesk it should be ```httpdocs/```.
-2. Make sure your web user has the permission to read, write and execute all directories under the web root.
-3. Rename config-dist.php to config.php and admin/config-dist.php to ```admin/config.php```
-4. For Linux/Unix make sure the following folders and files are writable.
+5. Переконайтеся, що ви встановили базу даних MySQL, до якої призначений користувач
+	* не використовуйте ваше ім'я користувача `root` та пароль `root`
+6. Відвідайте домашню сторінку магазину, наприклад, http://www.example.com або http://www.example.com/store/
+7. Вас має перенаправити на сторінку встановлення. Слідуйте інструкціям на екрані.
+8. Після успішного встановлення видаліть директорію `/install/` через ftp.
+9. Якщо ви завантажили скомпільовану версію з папкою під назвою "vendor" - її слід завантажити вище кореня веб-сайту (тобто в ту саму папку, де знаходиться `public_html` або `httpdocs`)
 
-		chmod 0777 config.php
-		chmod 0777 admin/config.php
+## Установка для Windows
 
-5. Make sure you have installed a MySQL Database which has a user assigned to it
-	* do not use your ```root``` username and ```root``` password
-6. Visit the store homepage e.g. http://www.example.com or http://www.example.com/store/
-7. You should be taken to the installer page. Follow the on screen instructions.
-8. After successful install, delete the ```/install/``` directory from ftp.
-9. If you have downloaded the compiled version with a folder called "vendor" - this should be uploaded above the webroot (so the same folder where the ```public_html``` or ```httpdocs``` is)
+1. Завантажте всі файли та папки на ваш сервер з папки "Upload". Це може бути будь-де на ваш вибір, наприклад, `/wwwroot/store` або `/wwwroot`
+2. Перейменуйте `config-dist.php` на `config.php` та `admin/config-dist.php` на `admin/config.php`
+3. Для Windows переконайтеся, що дозволи наступних папок та файлів дозволяють Читання та Запис.
 
-## Windows Install
+   	config.php
+   	admin/config.php
 
-1. Upload all the files and folders to your server from the "Upload" folder. This can be to anywhere of your choice. e.g. ```/wwwroot/store``` or ```/wwwroot```
-2. Rename ```config-dist.php``` to ```config.php``` and ```admin/config-dist.php``` to ```admin/config.php```
-3. For Windows make sure the following folders and files permissions allow Read and Write.
+4. Переконайтеся, що ви встановили базу даних MySQL, до якої призначений користувач
+	* не використовуйте ваше ім'я користувача `root` та пароль `root`
+5. Вас має перенаправити на сторінку встановлення. Слідуйте інструкціям на екрані.
+6. Після успішного встановлення видаліть директорію `/install/`.
 
-		config.php
-		admin/config.php
-
-4. Make sure you have installed a MySQL Database which has a user assigned to it
-	* do not use your ```root``` username and ```root``` password
-5. You should be taken to the installer page. Follow the on screen instructions.
-6. After successful install, delete the ```/install/``` directory.
-
-7. Make sure the following extensions are enabled in php.ini:
+7. Переконайтеся, що наступні розширення включені в php.ini:
 
 extension=curl;
 extension=gd;
 extension=zip;
 
-## Local Install
+## Локальна установка
 
-There are many all-in-one web servers out there and most of them should work with OpenCart out of the box.
+Існує багато веб-серверів, і більшість з них мають працювати з OpenCart "з коробки".
 
-Some examples...
+Деякі приклади...
 
 * https://www.apachefriends.org/
 * http://www.ampps.com/
 * http://www.usbwebserver.net
 * http://www.wampserver.com/en/
 
-## Notes
+## Примітки
 
-Godaddy Issues
+Проблеми з Godaddy
 
-If your hosting on godaddy you might need to rename the ```php.ini``` to ```user.ini```
+Якщо ваш хостинг на godaddy, вам може знадобитися перейменувати `php.ini` на `user.ini`
 
-It seems godaddy has started changing the industry standard names of files.
+Здається, godaddy почав змінювати стандартні назви файлів індустрії.
 
 ----------------------------
 
-## Going live
-When your site is ready to go live open file ```system/config/default.php``` 
+## Перехід в онлайн
+Коли ваш сайт готовий до роботи в онлайні, відкрийте файл `system/config/default.php`
 
-**Find:**
+**Знайдіть:**
 
 `$_['error_display'] = true;`
 
-**Replace with:**
+**Замініть на:**
 
 `$_['error_display'] = false;`
