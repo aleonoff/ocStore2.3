@@ -1,0 +1,18 @@
+<div id="extension-list">
+	<h3 class="text-center">{{ title_featured }}</h3>
+	<div class="row  pt-4">
+	{% for extension in extensions %}
+		<div class="col-md-6 text-center">
+			<section>
+				<div class="extension-preview"><a href="{{ extension.href }}&utm_campaign=ocstore4_install" target="_blank">
+						<img src="{{ extension.image }}" alt="{{ extension.name }}" title="{{ extension.name }}" class="img-responsive"></a>
+				</div>
+				<div class="extension-name">
+					<p><a href="{{ extension.href }}" target="_blank">{{ extension.name }}</a></p>
+					<p><span>{{ extension.price }}</span></p>
+				</div>
+			</section>
+		</div>
+	{% endfor %}
+	</div>
+</div>
