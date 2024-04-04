@@ -14,6 +14,7 @@ $_['text_default']     = 'За замовчуванням';
 $_['column_key']           = 'Ключ';
 $_['column_value']         = 'Значення';
 $_['column_keyword']       = 'SEO URL';
+$_['column_sort_order']    = 'Сортування';
 $_['column_store']         = 'Магазин';
 $_['column_language']      = 'Мова';
 $_['column_action']        = 'дія';
@@ -27,7 +28,7 @@ $_['entry_keyword']        = 'SEO URL';
 $_['entry_sort_order']     = 'Порядок сортування';
 
 // Help
-$_['help_keyword']         = 'Переконайтесь, що ви використовуєте символи лише у форматі a-z або 0-9 та - або _ для пробілів';
+$_['help_keyword']         = 'Ви можете використовувати лише символи a-z, 0-9, - або _';
 $_['help_sort_order']      = 'Порядок сортування ключових слів в URL-адресі';
 
 // Error

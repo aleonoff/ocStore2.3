@@ -14,6 +14,7 @@ $_['text_comment']				= 'Коментар додано';
 $_['entry_payment_method']		= 'Виберіть спосіб оплати...';
 
 // Error
+$_['error_customer']            = 'Вкажіть покупця';
 $_['error_payment_address']		= 'Вкажіть платіжну адресу';
 $_['error_shipping_address']	= 'Вкажіть адресу доставки';
 $_['error_shipping_method']		= 'Оберіть спосіб доставки';

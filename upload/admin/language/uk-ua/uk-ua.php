@@ -12,14 +12,14 @@ $_['thousand_point']                = '';
 // Text
 $_['text_yes']                      = 'Так';
 $_['text_no']                       = 'Ні';
+$_['text_on']                       = 'Вкл';
+$_['text_off']                      = 'Викл';
 $_['text_enabled']                  = 'Включено';
 $_['text_disabled']                 = 'Виключено';
-$_['text_enabled_short']            = 'Вкл';
-$_['text_disabled_short']           = 'Викл';
-$_['text_all']                      = ' --- Всі --- ';
 $_['text_none']                     = ' --- Не вибрано --- ';
 $_['text_select']                   = ' --- Виберіть --- ';
 $_['text_select_all']               = 'Виділити все';
+$_['text_all']                      = 'Всі';
 $_['text_unselect_all']             = 'Зняти виділення';
 $_['text_all_zones']                = 'Всі зони';
 $_['text_default']                  = ' <b>(За замовчуванням)</b>';
@@ -29,7 +29,7 @@ $_['text_loading']                  = 'Завантаження...';
 $_['text_no_results']               = 'Немає даних';
 $_['text_confirm']                  = 'Ви впевнені?';
 $_['text_home']                     = 'Головна';
-$_['text_just_now']					= 'щойно';
+$_['text_second_ago']               = 'щойно';
 $_['text_seconds_ago']				= '%s секунд тому';
 $_['text_minute_ago']				= '%s хвилину тому';
 $_['text_minutes_ago']				= '%s хвилин тому';
@@ -122,6 +122,9 @@ $_['button_backup']                 = 'Резервна копія';
 $_['button_developer']              = 'Налаштування розробника';
 $_['button_master']                 = 'Головний товар';
 $_['button_resend']                 = 'Надіслати повторно';
+$_['button_calculate']              = 'Підрахувати оплату';
+$_['button_csv']                    = 'Завантажити CSV';
+$_['button_complete']               = 'Завершені платежі';
 
 // Tab
 $_['tab_address']                   = 'Адреса';

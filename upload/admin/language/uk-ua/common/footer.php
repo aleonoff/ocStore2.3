@@ -1,4 +1,4 @@
 <?php
 // Text
-$_['text_footer']  = '<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' Всі права захищені.';
-$_['text_version'] = 'Версія %s';
+$_['text_footer'] 	= '<a target="_blank" href="https://ocstore.com/?utm_source=ocstore4_install">ocStore</a> &copy; 2010-' . date('Y') . ' Всі права захищені.';
+$_['text_version'] 	= 'Версія ocStore %s';

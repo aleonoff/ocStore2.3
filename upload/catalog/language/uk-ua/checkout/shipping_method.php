@@ -11,6 +11,7 @@ $_['text_success']           = 'Спосіб доставки змінений';
 $_['entry_shipping_method']  = 'Виберіть спосіб доставки...';
 
 // Error
+$_['error_customer']         = 'Вкажіть покупця';
 $_['error_payment_address']  = 'Вкажіть платіжну адресу';
 $_['error_shipping_address'] = 'Вкажіть адресу доставки';
 $_['error_shipping_method']  = 'Оберіть спосіб доставки';

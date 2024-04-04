@@ -9,9 +9,9 @@ $_['text_add']          = 'Додати користувача';
 $_['text_edit']         = 'Редагування';
 $_['text_user']             = 'Деталі користувачів';
 $_['text_password']         = 'Пароль';
-$_['text_user_login']       = 'Логін';
 $_['text_other']            = 'Інше';
 $_['text_login']            = 'Журнал входу';
+$_['text_authorize']        = 'Журнал авторизацій';
 
 // Column
 $_['column_username']       = 'Логін';
@@ -33,6 +33,7 @@ $_['entry_image']           = 'Зображення';
 $_['entry_status']          = 'Статус';
 
 // Tab
+$_['tab_authorize']         = 'Авторизації';
 $_['tab_login']             = 'Входи';
 
 // Error

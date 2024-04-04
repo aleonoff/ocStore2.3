@@ -4,7 +4,7 @@ $_['heading_title']          = 'Товари';
 
 // Text
 $_['text_success']           = 'Налаштування змінені';
-$_['text_variant']           = 'Зверніть увагу, оскільки це варіант продукту, ви повинні замінити дані <a href="%s" target="_blank" class="alert-link">основного продукту</a>. Інакше під час збереження дані буде замінено даними <a href="%s" target="_blank" class="alert-link">основного продукту</a>.';
+$_['text_variant']           = 'Зверніть увагу, оскільки це варіант товару, ви повинні замінити дані <a href="%s" target="_blank" class="alert-link">основного товару</a>. Інакше під час збереження дані буде замінено даними <a href="%s" target="_blank" class="alert-link">основного товару</a>.';
 $_['text_list']              = 'Список товарів';
 $_['text_add']               = 'Додати товар';
 $_['text_edit']              = 'Редагувати';
@@ -32,9 +32,7 @@ $_['text_image']             = 'Зображення';
 $_['text_image_additional']  = 'Додаткові зображення';
 $_['text_reward']            = 'Ціна в балах';
 $_['text_points']            = 'Бонусні бали';
-$_['text_subscription_trial']    = 'Сума: %s; Періодичність: %d %s; Кількість платежів: %d, Далі';
-$_['text_subscription_duration'] = 'Сума: %s; Періодичність:  %d %s; Кількість платежів:  %d';
-$_['text_subscription_cancel']   = 'Сума: %s; Періодичність:  %d %s ; Кількість платежів до скасування';
+$_['text_report']             = 'Звіти';
 
 // Column
 $_['column_name']            = 'Назва товару';
@@ -72,6 +70,7 @@ $_['entry_quantity']         = 'Кількість';
 $_['entry_minimum']          = 'Мінімальна кількість';
 $_['entry_stock_status']     = 'Відсутність на складі';
 $_['entry_price']            = 'Ціна';
+$_['entry_trial_price']      = 'Всього';
 $_['entry_tax_class']        = 'Клас податку';
 $_['entry_points']           = 'Бонусні бали';
 $_['entry_subtract']         = 'Віднімати зі складу';
@@ -128,7 +127,7 @@ $_['error_permission']       = 'У вас недостатньо прав для
 $_['error_name']             = 'Назва товару має містити від 1 до 255 символів';
 $_['error_meta_title']       = 'Мета-тег Title має містити від 1 до 255 символів';
 $_['error_model']            = 'Модель товару має містити від 1 до 64 символів';
-$_['error_seo']              = 'Будь ласка, вкажіть SEO URL';
-$_['error_keyword']          = 'SEO URL вже використовується';
+$_['error_keyword']           = 'SEO URL має містити від 1 до 64 символів';
+$_['error_keyword_exists']    = 'SEO URL має бути унікальним';
 $_['error_keyword_character'] = 'SEO URL може містити тільки символи a-z, 0-9, - та _';
 $_['error_required']         = '%s  - обов’язкове поле';

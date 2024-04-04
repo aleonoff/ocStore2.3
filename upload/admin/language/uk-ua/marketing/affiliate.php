@@ -20,6 +20,9 @@ $_['text_transaction']          = 'Транзакції';
 $_['text_transaction_add']      = 'Додати транзакцію';
 $_['text_report']               = 'Звіт';
 $_['text_filter']               = 'Фільтр';
+$_['text_payment_cheque']       = 'Оплата чеком';
+$_['text_payment_paypal']       = 'Оплата PayPal';
+$_['text_payment_bank']         = 'Оплата переказом';
 
 // Column
 $_['column_name']               = 'Ім’я партнера';
@@ -39,13 +42,12 @@ $_['column_action']             = 'Дія';
 
 // Entry
 $_['entry_customer']            = 'Ім’я партнера';
-$_['entry_status']              = 'Статус';
 $_['entry_company']             = 'Компанія';
 $_['entry_tracking']            = 'Код відстеження';
 $_['entry_website']             = 'Сайт';
 $_['entry_commission']          = 'Комісійні (%)';
 $_['entry_tax']                 = 'Податковий код (ІПН)';
-$_['entry_payment']             = 'Спосіб оплати';
+$_['entry_payment_method']      = 'Спосіб оплати';
 $_['entry_cheque']              = 'Чек: ім’я отримувача платежу';
 $_['entry_paypal']              = 'PayPal: Email отримувача';
 $_['entry_bank_name']           = 'Назва банку';
@@ -58,6 +60,8 @@ $_['entry_description']         = 'Опис';
 $_['entry_amount']              = 'Разом';
 $_['entry_date_from']           = 'Початкова дата';
 $_['entry_date_to']             = 'Кінцева дата';
+$_['entry_status']              = 'Статус';
+$_['entry_limit']               = 'Ліміт';
 
 // Help
 $_['help_tracking']             = 'Цей код використовується для відстеження рефералів';
@@ -70,6 +74,7 @@ $_['error_customer']            = 'Оберіть партнера';
 $_['error_already']             = 'Такий партнер вже зареєстрований';
 $_['error_tracking']            = 'Вкажіть код відстеження';
 $_['error_exists']              = 'Такий код відстеження вже використовується';
+$_['error_payment_method']      = 'Необхідно обрати спосіб оплати';
 $_['error_cheque']              = 'Необхідно вказати ім’я отримувача чека';
 $_['error_paypal']              = 'Невірна адреса електронної пошти PayPal';
 $_['error_bank_account_name']   = 'Необхідно вказати назву рахунку';
