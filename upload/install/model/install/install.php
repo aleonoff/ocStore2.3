@@ -132,4 +132,24 @@ class Install extends \Opencart\System\Engine\Model {
 		// set the current years prefix
 		$db->query("UPDATE `" . $data['db_prefix'] . "setting` SET `value` = 'INV-" . date('Y') . "-00' WHERE `key` = 'config_invoice_prefix'");
 	}
+    public function getCountries() {
+        $query = $this->db->query("SELECT country_id, name, status FROM " . DB_PREFIX . "country ORDER BY status = 1 DESC, LCASE(name)");
+
+        return $query->rows;
+    }
+
+    public function enableCountries($countries) {
+        $this->db->query("UPDATE " . DB_PREFIX . "country SET status = '0'");
+
+        $countries_filtered = array_map('intval', $countries);
+
+        $this->db->query("UPDATE " . DB_PREFIX . "country SET status = '1' WHERE country_id IN (" . implode(',', $countries_filtered) . ")");
+
+        if (in_array(176, $countries_filtered)) {
+            $this->db->query("UPDATE `" . DB_PREFIX . "setting` SET `value` = '176' WHERE `key` = 'config_country_id'");
+        } else {
+            $country_id = array_shift($countries_filtered);
+            $this->db->query("UPDATE `" . DB_PREFIX . "setting` SET `value` = '" . (int)$country_id . "' WHERE `key` = 'config_country_id'");
+        }
+    }
 }

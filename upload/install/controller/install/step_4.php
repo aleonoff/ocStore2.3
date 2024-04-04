@@ -10,41 +10,55 @@ class Step4 extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function index(): void {
-		$this->load->language('install/step_4');
+        $this->load->language('install/step_4');
+        $this->load->model('install/install');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+        if ($this->request->server['REQUEST_METHOD'] == 'POST') {
 
-		$data['heading_title'] = $this->language->get('heading_title');
+            $this->model_install_install->enableCountries($this->request->post['country']);
 
-		$data['text_step_4'] = $this->language->get('text_step_4');
-		$data['text_catalog'] = $this->language->get('text_catalog');
-		$data['text_admin'] = $this->language->get('text_admin');
-		$data['text_extension'] = $this->language->get('text_extension');
 
-		$data['text_mail'] = $this->language->get('text_mail');
-		$data['text_mail_description'] = $this->language->get('text_mail_description');
 
-		$data['text_facebook'] = $this->language->get('text_facebook');
-		$data['text_facebook_description'] = $this->language->get('text_facebook_description');
-		$data['text_facebook_visit'] = $this->language->get('text_facebook_visit');
+            $this->response->redirect($this->url->link('install/step_5'));
+        }
 
-		$data['text_forum'] = $this->language->get('text_forum');
-		$data['text_forum_description'] = $this->language->get('text_forum_description');
-		$data['text_forum_visit'] = $this->language->get('text_forum_visit');
+        $this->document->setTitle($this->language->get('heading_title'));
 
-		$data['text_commercial'] = $this->language->get('text_commercial');
-		$data['text_commercial_description'] = $this->language->get('text_commercial_description');
-		$data['text_commercial_visit'] = $this->language->get('text_commercial_visit');
+        $data['heading_title'] = $this->language->get('heading_title');
+        $data['text_step_4'] = $this->language->get('text_step_4');
+        $data['text_yes'] = $this->language->get('text_yes');
+        $data['text_no'] = $this->language->get('text_no');
+        $data['text_select'] = $this->language->get('text_select');
+        $data['text_delete'] = $this->language->get('text_delete');
+        $data['text_select_all'] = $this->language->get('text_select_all');
+        $data['text_unselect_all'] = $this->language->get('text_unselect_all');
 
-		$data['button_mail'] = $this->language->get('button_mail');
+        $data['button_back'] = $this->language->get('button_back');
+        $data['button_continue'] = $this->language->get('button_continue');
 
-		$data['error_warning'] = $this->language->get('error_warning');
+        $data['entry_country'] = $this->language->get('entry_country');
+        $data['help_country'] = $this->language->get('help_country');
 
-		$data['promotion'] = $this->load->controller('install/promotion');
+        $data['countries'] = $this->model_install_install->getCountries();
 
-		$data['footer'] = $this->load->controller('common/footer');
-		$data['header'] = $this->load->controller('common/header');
+        if ($this->request->server['REQUEST_METHOD'] == 'POST') {
+            $data['country'] = !empty($this->request->post['country']) ? $this->request->post['country'] : array();
+        } else {
+            $data['country'] = array();
 
-		$this->response->setOutput($this->load->view('install/step_4', $data));
+            foreach ($data['countries'] as $country) {
+                if ($country['status']) {
+                    $data['country'][] = $country['country_id'];
+                }
+            }
+        }
+
+        $data['back'] = $this->url->link('install/step_3');
+
+        $data['footer'] = $this->load->controller('common/footer');
+        $data['header'] = $this->load->controller('common/header');
+        $data['column_left'] = $this->load->controller('common/column_left');
+
+        $this->response->setOutput($this->load->view('install/step_4', $data));
 	}
 }

@@ -144,6 +144,11 @@ input[type="radio"]:checked, .radio input[type="radio"]:checked, .radio-inline i
     background: #fff;
 }
 
+#countries .form-check-input:checked {
+    background-color: #1e91cf;
+    border-color: #1e91cf;
+}
+
 input[type="radio"], .radio input[type="radio"], .radio-inline input[type="radio"] {
     width: 15px;
     width: 18px \0;
@@ -198,4 +203,20 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     content: " \f107";
+}
+
+.form-label, .col-form-label {
+    font-weight: bold;
+}
+
+.form-switch-lg {
+    font-size: 26px;
+    min-height: 36px;
+    line-height: 36px;
+}
+
+@media (min-width: 992px) {
+    .col-form-label {
+        text-align: right;
+    }
 }
