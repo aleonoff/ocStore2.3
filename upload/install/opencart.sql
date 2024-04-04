@@ -100,9 +100,9 @@ INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id
 --
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
-(6, 'HP Products', 1),
-(7, 'Home Page Slideshow', 1),
-(8, 'Manufacturers', 1);
+(6, 'Банер для категорій', 1),
+(7, 'Слайдшоу на головній', 1),
+(8, 'Карусель виробників', 1);
 
 -----------------------------------------------------------
 
@@ -2332,7 +2332,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_affiliate_id', '4', 0),
 (0, 'config', 'config_return_id', '0', 0),
 (0, 'config', 'config_return_status_id', '2', 0),
-(0, 'config', 'config_logo', 'catalog/opencart-logo.png', 0),
+(0, 'config', 'config_logo', 'catalog/logo.png', 0),
 (0, 'config', 'config_image_thumb_width', '500', 0),
 (0, 'config', 'config_image_thumb_height', '500', 0),
 (0, 'config', 'config_image_popup_width', '800', 0),

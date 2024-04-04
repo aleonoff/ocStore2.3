@@ -3,9 +3,9 @@
 $_['heading_title']            = 'Важливе повідомлення про безпеку';
 
 // Text
-$_['text_install']             = 'Папка установки';
-$_['text_install_description'] = 'Папка установки має бути видалена';
-$_['text_install_success']     = 'Папку установки видалено';
+$_['text_install']             = 'Папка встановлення';
+$_['text_install_description'] = 'Папка встановлення має бути видалена';
+$_['text_install_success']     = 'Папку встановлення видалено';
 $_['text_storage']             = 'Папка Storage';
 $_['text_storage_description'] = 'Дуже важливо, щоб ви перемістили каталог storage за межі каталогу сайту (наприклад, public_html, www або htdocs)';
 $_['text_storage_success']     = 'Папку Storage переміщено';
@@ -26,7 +26,7 @@ $_['button_rename']            = 'Змінити назву';
 
 // Error
 $_['error_permission']         = 'У вас недостатньо прав для внесення змін';
-$_['error_install']            = 'Папка установки відсутня на сервері';
+$_['error_install']            = 'Папка встановлення відсутня на сервері';
 $_['error_storage']            = 'Папка Storage відсутня на сервері';
 $_['error_storage_exists']     = 'Папка Storage вже існує на сервері';
 $_['error_admin']              = 'Каталог адмінпанелі відсутній на сервері';
