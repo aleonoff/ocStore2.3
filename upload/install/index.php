@@ -1,4 +1,9 @@
 <?php
+define('VERSION', '4.0.2.3');
+define('VERSION_CORE', 'ocStore');
+define('VERSION_BUILD', '0001');
+define('VERSION_LANGPACK', 'UK-EN');
+
 ini_set('display_errors', 1);
 
 error_reporting(E_ALL);

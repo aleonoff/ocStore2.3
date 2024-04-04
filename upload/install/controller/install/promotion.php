@@ -10,9 +10,14 @@ class Promotion extends \Opencart\System\Engine\Controller {
 	 * @return string
 	 */
 	public function index(): string {
+
+        $this->load->language('install/promotion');
+
+        $data['title_featured'] = $this->language->get('title_featured');
+
 		$curl = curl_init();
 
-		curl_setopt($curl, CURLOPT_URL, 'https://www.opencart.com/index.php?route=api/install');
+		curl_setopt($curl, CURLOPT_URL, 'https://ocstore.com/index.php?route=extension/json/extensions&version=' . urlencode(VERSION));
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($curl, CURLOPT_HEADER, false);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
@@ -27,8 +32,12 @@ class Promotion extends \Opencart\System\Engine\Controller {
 			$response = '';
 		}
 
+        $extensions = json_decode($response, true);
+
+        $data['extensions'] = $extensions['extensions'];
+
 		curl_close($curl);
 
-		return $response;
+        return $this->load->view('install/promotion', $data);
 	}
 }
