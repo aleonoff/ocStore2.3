@@ -853,3 +853,7 @@ div.required .col-form-label:not(span):before, td.required:before {
 td {
     position: relative;
 }
+
+
+#tab-description img {max-width: 100%;}
+.developer-avatar {max-width: 100px;}

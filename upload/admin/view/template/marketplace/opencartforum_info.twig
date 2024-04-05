@@ -1,0 +1,121 @@
+{{ header }}{{ column_left }}
+<div id="content">
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="float-end">
+				<a href="{{ back }}" data-bs-toggle="tooltip" title="{{ button_back }}" class="btn btn-light"><i class="fa-solid fa-reply"></i></a>
+			</div>
+			<h1>{{ heading_title }}</h1>
+			<ol class="breadcrumb">
+				{% for breadcrumb in breadcrumbs %}
+					<li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+				{% endfor %}
+			</ol>
+		</div>
+	</div>
+	<div id="marketplace-extension-info" class="container-fluid">
+    {% if error_warning %}
+      <div class="alert alert-danger"><i class="fa-solid fa-circle-exclamation"></i> {{ error_warning }}</div>
+    {% endif %}
+		<div class="card">
+			<div class="card-header"><i class="fa-solid fa-puzzle-piece"></i> {{ name }}</div>
+			<div class="card-body">
+				<div class="row extension-info">
+					<div class="col-md-8 col-lg-9">
+						{% if banner %}
+							<div id="banner" class="text-center img-thumbnail mb-3"><img src="{{ banner }}" title="{{ name }}" alt="{{ name }}" class="img-fluid"/></div>
+						{% endif %}
+						<div class="row thumbnails">
+							{% for image in images %}
+								<div class="col-4 col-md-3 col-lg-2 mb-3"><a href="{{ image.popup }}"><img src="{{ image.thumb }}" alt="{{ image.name }}" title="{{ image.name }}" class="img-fluid img-thumbnail"/></a></div>
+							{% endfor %}
+						</div>
+						<ul class="nav nav-tabs">
+							<li class="nav-item"><a href="#tab-description" class="nav-link active" data-bs-toggle="tab">{{ tab_general }}</a></li>
+							<li class="nav-item"><a href="#tab-changelog" class="nav-link" data-bs-toggle="tab">{{ tab_changelog }}</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="tab-description" class="tab-pane fade show active">{{ description }}</div>
+							<div id="tab-changelog" class="tab-pane fade">{{ changelog }}</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div id="buy" class="card mb-3">
+							<div class="card-body">
+								<div class="text-center"><a href="{{ extension_url }}" target="_blank" id="button-buy" class="btn btn-success btn-lg btn-block">{{ button_purchase }}</a></div>
+								<div id="price" class="row">
+									<div class="col-lg-5"><strong>{{ text_price }}</strong></div>
+									<div class="col-lg-7 text-end">{% if license %}
+											{{ price }}
+										{% else %}
+											{{ text_free }}
+										{% endif %}
+									</div>
+								</div>
+								<hr>
+								<ul class="list-check">
+									{% for field in cfields %}
+										<li class="pb-1">{{ field.name }}: {{ field.value|raw }}</li>
+									{% endfor %}
+								</ul>
+								<hr>
+								<div class="row">
+									<div class="col-md-5"><strong>{{ text_rating }}</strong></div>
+									<div class="col-md-7 text-end">{% for i in 1..5 %}
+											{% if rating < i %}
+                        <i class="fa-regular fa-star"></i>
+                      {% else %}
+                        <i class="fa-solid fa-star"></i>
+                      {% endif %}
+										{% endfor %} ({{ rating_total }})
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-5"><strong>{{ text_date_modified }}</strong></div>
+									<div class="col-md-7 text-end">{{ date_modified }}</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-5"><strong>{{ text_date_added }}</strong></div>
+									<div class="col-md-7 text-end">{{ date_added }}</div>
+								</div>
+							</div>
+						</div>
+						<div id="sales" class="card mb-3">
+							<div class="card-body"><i class="fa-solid fa-shopping-cart"></i> <strong>{{ sales }}</strong> {{ text_sales }}</div>
+						</div>
+						<div id="sales" class="card mb-3">
+							<div class="card-body"><i class="fa-solid fa-download"></i> <strong>{{ downloaded }}</strong> {{ text_downloaded }}</div>
+						</div>
+						<div class="card mb-3  text-center">
+							<div class="card-body">
+								<div class="media text-center">
+									<img src="{{ member_image }}" alt="{{ member_username }}" title="{{ member_username }}" class="rounded-circle developer-avatar">
+									<div class="media-body">
+										<h5 class="mt-2"><a href="{{ filter_member }}">{{ member_username }}</a></h5>
+										<small>{{ text_member_since }} {{ member_date_added }}</small>
+									</div>
+								</div>
+								<br/>
+								<a href="{{ filter_member }}" target="_blank" class="btn btn-primary btn-lg btn-block mb-2">{{ button_view_all }}</a> <a href="https://opencartforum.com/topic/{{ topicid }}-{{ topicseoname }}" target="_blank" class="btn btn-outline-secondary btn-lg btn-block">{{ button_support }}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript"><!--
+$(document).ready(function () {
+    $('.thumbnails').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        gallery: {
+            enabled: true
+        }
+    });
+});
+//--></script>
+{{ footer }}
