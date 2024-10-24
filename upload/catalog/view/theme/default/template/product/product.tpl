@@ -146,6 +146,18 @@
               <h2><?php echo $special; ?></h2>
             </li>
             <?php } ?>
+
+            <?php /* Module currencies */ ?>
+            <?php if (isset($usd_price)) { ?>
+            <li>В долларах: <?php echo $usd_price; ?></li>
+            <?php } ?>
+            <?php if (isset($byn_price)) { ?>
+            <li>В белорусских рублях: <?php echo $byn_price; ?></li>
+            <?php } ?>
+            <?php if (isset($kzt_price)) { ?>
+            <li>В казахстанских тенге: <?php echo $kzt_price; ?></li>
+            <?php } ?>
+
             <?php if ($tax) { ?>
             <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
             <?php } ?>
