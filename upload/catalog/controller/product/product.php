@@ -310,6 +310,41 @@ class ControllerProductProduct extends Controller {
 				$data['price'] = false;
 			}
 
+            // Модуль currencies
+            if ( $this->config->get('currencies_status') && $data['price']) {
+
+                $currencies_cache = '';
+                if ( $this->config->get('currencies_cache') ) {
+                    $currencies_cache = $this->cache->get('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'));
+                }
+
+                if ( !$currencies_cache ) {
+                    $type = 'live';
+                    $key = 'a2426df9561dfdcea2da02f0e38303af';
+                    $currencies = array('USD, KZT, BYN');
+                    $url = 'https://api.currencylayer.com/' . $type . '?access_key=' . $key . '&currencies=' . implode(',', $currencies) . '&source=RUB&format=1';
+
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($ch, CURLOPT_URL, $url);
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);// отключаем сертификат
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+                    $currencies_cache = curl_exec($ch);
+                    $error = curl_error($ch);
+                    curl_close($ch);
+
+                    if (!$error)  {
+                        $currencies_cache = json_decode($currencies_cache, true);
+                        $this->cache->set('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'), $currencies_cache);
+                    }
+                }
+
+                $data['usd_price'] = isset($currencies_cache['quotes']['RUBUSD']) ? round((float)$currencies_cache['quotes']['RUBUSD'] * (float)$product_info['price'], 2) : false;
+                $data['kzt_price'] = isset($currencies_cache['quotes']['RUBKZT']) ? round((float)$currencies_cache['quotes']['RUBKZT'] * (float)$product_info['price'], 2) : false;
+                $data['byn_price'] = isset($currencies_cache['quotes']['RUBBYN']) ? round((float)$currencies_cache['quotes']['RUBBYN'] * (float)$product_info['price'], 2) : false;
+
+            }
+
 			if ((float)$product_info['special']) {
 				$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 			} else {
@@ -695,4 +730,5 @@ class ControllerProductProduct extends Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
+
 }
