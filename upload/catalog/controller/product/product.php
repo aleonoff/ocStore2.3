@@ -345,7 +345,7 @@ class ControllerProductProduct extends Controller {
 		                    }
 		                }
 		
-		                $currencies_price = !$data['special'] ? $data['price'] : $data['special'];
+		                $currencies_price = !$data['special'] ? $product_info['price'] : $product_info['special'];
 		                $data['usd_price'] = isset($currencies_cache['quotes']['RUBUSD']) ? round((float)$currencies_cache['quotes']['RUBUSD'] * (float)$currencies_price, 2) : false;
 		                $data['kzt_price'] = isset($currencies_cache['quotes']['RUBKZT']) ? round((float)$currencies_cache['quotes']['RUBKZT'] * (float)$currencies_price, 2) : false;
 		                $data['byn_price'] = isset($currencies_cache['quotes']['RUBBYN']) ? round((float)$currencies_cache['quotes']['RUBBYN'] * (float)$currencies_price, 2) : false;
