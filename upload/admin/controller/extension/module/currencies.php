@@ -22,7 +22,6 @@ class ControllerExtensionModuleCurrencies extends Controller {
         	$data['text_no'] = $this->language->get('text_no');
 
 		$data['entry_currencies_cache'] = $this->language->get('entry_currencies_cache');
-		$data['entry_cache_time'] = $this->language->get('entry_cache_time');
 		$data['entry_status'] = $this->language->get('entry_status');
 
 		$data['button_save'] = $this->language->get('button_save');

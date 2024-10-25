@@ -317,40 +317,40 @@ class ControllerProductProduct extends Controller {
 			}
 
 			// Модуль currencies
-    			if ( $this->config->get('currencies_status') && $data['price']) {
+			if ( $this->config->get('currencies_status') && $data['price']) {
 
-		                $currencies_cache = '';
-		                if ( $this->config->get('currencies_cache') ) {
-		                    $currencies_cache = $this->cache->get('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'));
-		                }
+				$currencies_cache = '';
+				if ( $this->config->get('currencies_cache') ) {
+					$currencies_cache = $this->cache->get('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'));
+				}
 
-		                if ( !$currencies_cache ) {
-		                    $type = 'live';
-		                    $key = 'a2426df9561dfdcea2da02f0e38303af';
-		                    $currencies = array('USD, KZT, BYN');
-		                    $url = 'https://api.currencylayer.com/' . $type . '?access_key=' . $key . '&currencies=' . implode(',', $currencies) . '&source=RUB&format=1';
-		
-		                    $ch = curl_init();
-		                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		                    curl_setopt($ch, CURLOPT_URL, $url);
-		                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);// отключаем сертификат
-		                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-		                    $currencies_cache = curl_exec($ch);
-		                    $error = curl_error($ch);
-		                    curl_close($ch);
-		
-		                    if (!$error)  {
-		                        $currencies_cache = json_decode($currencies_cache, true);
-		                        $this->cache->set('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'), $currencies_cache);
-		                    }
-		                }
-		
-		                $currencies_price = !$data['special'] ? $product_info['price'] : $product_info['special'];
-		                $data['usd_price'] = isset($currencies_cache['quotes']['RUBUSD']) ? round((float)$currencies_cache['quotes']['RUBUSD'] * (float)$currencies_price, 2) : false;
-		                $data['kzt_price'] = isset($currencies_cache['quotes']['RUBKZT']) ? round((float)$currencies_cache['quotes']['RUBKZT'] * (float)$currencies_price, 2) : false;
-		                $data['byn_price'] = isset($currencies_cache['quotes']['RUBBYN']) ? round((float)$currencies_cache['quotes']['RUBBYN'] * (float)$currencies_price, 2) : false;
-		
-		        }
+				if ( !$currencies_cache ) {
+					$type = 'live';
+					$key = 'a2426df9561dfdcea2da02f0e38303af';
+					$currencies = array('USD, KZT, BYN');
+					$url = 'https://api.currencylayer.com/' . $type . '?access_key=' . $key . '&currencies=' . implode(',', $currencies) . '&source=RUB&format=1';
+
+					$ch = curl_init();
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+					curl_setopt($ch, CURLOPT_URL, $url);
+					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);// отключаем сертификат
+					curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+					$currencies_cache = curl_exec($ch);
+					$error = curl_error($ch);
+					curl_close($ch);
+
+					if (!$error)  {
+						$currencies_cache = json_decode($currencies_cache, true);
+						$this->cache->set('currencies.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id'), $currencies_cache);
+					}
+				}
+
+				$currencies_price = !$data['special'] ? $product_info['price'] : $product_info['special'];
+				$data['usd_price'] = isset($currencies_cache['quotes']['RUBUSD']) ? round((float)$currencies_cache['quotes']['RUBUSD'] * (float)$currencies_price, 2) : false;
+				$data['kzt_price'] = isset($currencies_cache['quotes']['RUBKZT']) ? round((float)$currencies_cache['quotes']['RUBKZT'] * (float)$currencies_price, 2) : false;
+				$data['byn_price'] = isset($currencies_cache['quotes']['RUBBYN']) ? round((float)$currencies_cache['quotes']['RUBBYN'] * (float)$currencies_price, 2) : false;
+	
+			}
 
 			if ($this->config->get('config_tax')) {
 				$data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
